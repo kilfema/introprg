@@ -1,2 +1,0 @@
-# introprg
-Proyectos de DAM
