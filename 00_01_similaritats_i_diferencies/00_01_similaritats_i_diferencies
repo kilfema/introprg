@@ -1,0 +1,36 @@
+##########################################
+Exercici 00_01. Similaritats i diferències
+##########################################
+
+Autoria: Kilian Fernández – 23/09/2025
+
+Introducció: L’exercici es tracta d'un exercici en que es compara la realització d'un mateix programa escrit en diferents llenguatges de programació. L’objectiu és que l’alumne entengui les diferents formes que diferents llenguatges tenen per resoldre un mateix problema.
+
+========
+
+Pregunta 1. Què fa el programa?
+-------------------------------
+El programa intenta resoldre el càlcul de l’àrea d’un cercle.
+
+
+Pregunta 2. Elements comuns
+---------------------------
+Tots els llenguatges tenen els següents elements en comú: defineixen la constant (PI) i declaren variables; mostren un missatge inicial “Càlcul de l'àrea d'un cercle” i demanen a l’usuari d’introduir una dada (el radi del cercle). Tots converteixen la dada en un número flotant i fan l’operació amb la fórmula PI * radi ²; mostrant el resultat amb un text “L’àrea és”.
+
+
+Pregunta 3. Entrada/sortida
+---------------------------
+En pseudocodi, l'entrada l'obté amb llegeix radi i el resultat el mostra amb escriu "L'àrea és ", àrea". En C, l’entrada l’obté amb printf, indicant el text “Introduïu el radi: " i el resultat el mostra amb "L'àrea és %f\n", area.
+
+A python, en canvi, s’utilitza input per demanar la dada del radi i després fa un print (f"L'àrea és {area}"). En Java, fa us del System.out.print.
+
+
+Pregunta 4. Variables
+---------------------
+Un altre exemple de variable en l’exercici és el radi.
+
+
+Pregunta 5. Preferència
+-----------------------
+El llenguatge que més interessant em resulta és C per la seva dificultat i ser de tant baix nivell. El fet que s’utilitzi en màquines como microprocessadors em genera molta curiositat.
+
