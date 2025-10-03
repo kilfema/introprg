@@ -12,7 +12,7 @@ public class CalculaArea {
         String linia = Entrada.readLine();
         
         //Obté unitats
-        System.out.println("Introduïu les unitats (ex. cm)");
+        System.out.println("Introduïu les unitats (ex. cm):");
         String unitats = Entrada.readLine();
         
         //Calcula àrea
