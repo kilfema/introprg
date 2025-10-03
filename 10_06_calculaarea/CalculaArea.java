@@ -1,6 +1,7 @@
 /*
-Descripción
-*/
+ * Programa que demana el radi i les unitats,
+ * calcula l'àrea d'un cercle i mostra el resultat.
+ */
 
 public class CalculaArea {
     public static void main(String[] args) {
