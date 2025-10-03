@@ -1,5 +1,5 @@
 /*
-Descripción
+Declaració i incialització de diferents tipus de variables
 */
 
 public class nomVariables {
@@ -19,6 +19,6 @@ public class nomVariables {
         
         
         //Mostra resultat
-        System.out.println("La meva talla de sabates és " + tallaSabates + ", el meu aniversari és el " + dataAniversari + "i em dic " + nom + ". A més, el color del meu fons de pantalla és " + colorFonsEscriptori + " i si em preguntessis si m'agrada la llimona, la resposta booleana és " + agradaLlimona);
+        System.out.println("La meva talla de sabates és " + tallaSabates + ", el meu aniversari és el " + dataAniversari + " i em dic " + nom + ". A més, el color del meu fons de pantalla és " + colorFonsEscriptori + " i si em preguntessis si m'agrada la llimona, la resposta booleana és " + agradaLlimona);
     }
 }
