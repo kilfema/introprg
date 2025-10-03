@@ -30,6 +30,7 @@
 
             // resta-li el número pensat
             numero = numero - numeroPensat;
-            System.out.println("Finalment, en restar-li el valor inicial, queda " + numero + ". A que el resultat és 2?" );
+            System.out.println("Finalment, en restar-li el valor inicial, queda " + numero);
+            System.out.println("A que el resultat és 2?");
         }
     }
