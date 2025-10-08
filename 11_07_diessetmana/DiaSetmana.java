@@ -29,7 +29,7 @@ public class DiaSetmana {
             System.out.println("Dissabte");
             
         } else if (numero == 7) {
-            System.out.println("Dimarts");
+            System.out.println("Diumenge");
             
         } else {
             System.out.println("Error");
