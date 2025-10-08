@@ -3,7 +3,7 @@
  * Programa que pide mes y año y devuelve mes anterior y posterior al dado
  */
  
-public class MesAny {
+public class MesosAnys {
     public static void main(String[] args) {
       
       //demana mes
@@ -51,5 +51,3 @@ public class MesAny {
             
     }
 }
-
-
