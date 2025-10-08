@@ -7,7 +7,7 @@ public class ClassificaCaravana {
     public static void main(String[] args) {
         
         //Demana valor
-        int preu = Integer.parseInt(Entrada.readLine());
+        int preu = Integer.parseInt(args[0]);
         
         //Si val menys de 50.000
         if (preu <50000) {
