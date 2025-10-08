@@ -3,7 +3,7 @@
  * Aquest programa categoritza les caravanes bassant-se en el seu preu. Per fer-ho, utilitza condicionals
  */
  
-public class Autocaravana {
+public class ClassificaCaravana {
     public static void main(String[] args) {
         
         //Demana valor
