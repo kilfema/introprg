@@ -3,7 +3,7 @@
  * Aquest programa distingueix quin dia de la setmana és quan l'usuari indica un número. Utilitza switch en comptes d'un condicional
  */
  
-public class DiaSetmana {
+public class DiaSetmanaSwitch {
     public static void main(String[] args) {
         
         //número que indica l'usuari
