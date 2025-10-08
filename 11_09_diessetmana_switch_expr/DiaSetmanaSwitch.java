@@ -3,7 +3,7 @@
  * Aquest programa distingueix quin dia de la setmana és quan l'usuari indica un número i retorna el valor assignat. Utilitza Switch EXpression
  */
  
-public class DiaSetmanaSwitchExpression {
+public class DiaSetmanaSwitch {
     public static void main(String[] args) {
         
         //número que indica l'usuari
