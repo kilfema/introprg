@@ -27,6 +27,7 @@ public class TresEnOrdre {
       //compara primer
       if (primer > segon && primer > tercer) {
         mesGran = primer;
+        
       } else if (primer > segon ^ primer > tercer) {
         enMig = primer;
       } else {
@@ -43,14 +44,39 @@ public class TresEnOrdre {
       }
       
       //compara tercer
-       if (tercer > segon && tercer > primer) {
+       if (tercer >= segon && tercer >= primer) {
         mesGran = tercer;
-      } else if (tercer > segon ^ tercer > primer) {
+      } else if (tercer >= segon ^ tercer >= primer) {
         enMig = tercer;
       } else {
         mesPetit = tercer;
       }
       
+       if ((primer == segon) && (primer > tercer)) {
+            enMig = primer;
+            mesGran = segon;
+            mesPetit = tercer;
+        
+      } else if ((primer == segon) && (primer < tercer)) {
+            enMig = segon;
+            mesGran = tercer;
+            mesPetit = primer;
+        
+      } else if ((tercer == segon) && (tercer > primer)) {
+            enMig = tercer;
+            mesGran = segon;
+            mesPetit = primer;
+        
+      } else if ((tercer == segon) && (tercer < primer)) {
+            enMig = segon;
+            mesGran = primer;
+            mesPetit = tercer;
+      
+      } else if (primer == segon && primer == tercer) {
+            enMig = primer;
+            mesPetit = segon;
+            mesGran = tercer;
+      }
       
       System.out.println(mesPetit + ", " + enMig + " i " + mesGran);
       
