@@ -1,7 +1,7 @@
 /*
  * AQuest programa demana una quantitat que s'ha de pagar i la quantitat que s'ingressa, i retorna el faltant o sobrant, si n'hi ha.
  */
-public class Pagaments {
+public class Pagament {
     public static void main(String[] args) {
     
         //demana valors
