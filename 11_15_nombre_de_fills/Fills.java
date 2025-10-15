@@ -2,7 +2,7 @@
  * Aquest programa demana el nombre de fills que tens i et retorna un missatge
  */
  
-public class NombreFills {
+public class Fills {
     public static void main(String[] args) {
     
         //demana nombre de fills
