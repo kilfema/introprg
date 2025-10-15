@@ -17,7 +17,7 @@ public class Pagament {
             int diferenciaNegativa = preu - cuantia;
             System.out.println("Falten " + diferenciaNegativa + "€");
         } else {
-            System.out.println("Ni sobra ni falta res");
+            System.out.println("No sobra ni falta res");
         }
         
     }
