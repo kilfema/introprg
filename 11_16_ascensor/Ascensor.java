@@ -21,3 +21,11 @@ public class Ascensor {
         
     }
 }
+
+dev@introprgvm:~/introprg/11_16_ascensor$ java Ascensor
+pis?
+planta baixa
+botó?
+pujar un
+Error
+
