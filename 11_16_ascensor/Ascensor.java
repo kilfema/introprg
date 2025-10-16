@@ -11,21 +11,27 @@ public class Ascensor {
         System.out.println("botó?");
         String boto = Entrada.readLine();
         
-        if (pis == "planta baixa" && boto == "pujar un") {
+        //condicional planta baixa
+        if (pis.equals("planta baixa") && boto.equals("pujar un")) {
             System.out.println("primer pis");
-        } else if (pis == "planta baixa" && boto == "pujar dos") {
+        } else if (pis.equals("planta baixa") && boto.equals("pujar dos")) {
             System.out.println("segon pis");
+            
+        //primera planta    
+        } else if (pis.equals("primera planta") && boto.equals("pujar un")) {
+            System.out.println("segon pis");
+        } else if (pis.equals("primera planta") && boto.equals("baixar un")) {
+            System.out.println("planta baixa");
+            
+        //segona planta
+        } else if (pis.equals("segona planta") && boto.equals("baixar un")) {
+            System.out.println("primer pis");
+        } else if (pis.equals("segona planta") && boto.equals("baixar dos")) {
+            System.out.println("planta baixa");
         } else {
             System.out.println("Error");
         }
         
     }
 }
-
-dev@introprgvm:~/introprg/11_16_ascensor$ java Ascensor
-pis?
-planta baixa
-botó?
-pujar un
-Error
 
