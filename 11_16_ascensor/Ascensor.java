@@ -18,15 +18,15 @@ public class Ascensor {
             System.out.println("segon pis");
             
         //primera planta    
-        } else if (pis.equals("primera planta") && boto.equals("pujar un")) {
+        } else if (pis.equals("primer pis") && boto.equals("pujar un")) {
             System.out.println("segon pis");
-        } else if (pis.equals("primera planta") && boto.equals("baixar un")) {
+        } else if (pis.equals("primer pis") && boto.equals("baixar un")) {
             System.out.println("planta baixa");
             
         //segona planta
-        } else if (pis.equals("segona planta") && boto.equals("baixar un")) {
+        } else if (pis.equals("segon pis") && boto.equals("baixar un")) {
             System.out.println("primer pis");
-        } else if (pis.equals("segona planta") && boto.equals("baixar dos")) {
+        } else if (pis.equals("segon pis") && boto.equals("baixar dos")) {
             System.out.println("planta baixa");
         } else {
             System.out.println("error");
