@@ -23,7 +23,7 @@ public class Metge {
             
                 //sí esternuts i mal de cap + valora problemes estomac
                 if (estomac.equals("sí")) {
-                    System.out.println("Pren un paracetamol");
+                    System.out.println("Pren paracetamol");
                 } else {
                     System.out.println("Pren una aspirina");
                 }
