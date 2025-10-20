@@ -25,7 +25,7 @@ public class Metge {
                 if (estomac.equals("sí")) {
                     System.out.println("Pren paracetamol");
                 } else {
-                    System.out.println("Pren una aspirina");
+                    System.out.println("Pren aspirina");
                 }
                 
             //si estornuts i no mal cap + valora tos
