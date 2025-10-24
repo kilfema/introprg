@@ -47,7 +47,7 @@ public class Metge {
                     //si tos + valora edat
                     System.out.println("Edat?");
                     int edat = Integer.parseInt(Entrada.readLine());
-                    
+                                       
                     if (edat >=12){
                         System.out.println("Pren un carmel d'eucaliptus");
                     } else {
