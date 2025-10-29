@@ -28,7 +28,7 @@ public class InformeString {
         System.out.println("\"" + principal + "\".equals(\"" + secundari + "\"): " + principal.equals(secundari));
         
         //equalsIgnoreCase
-        System.out.println("\"" + principal + "\".equalsIgnoreCase(" + secundari + "): " + principal.equalsIgnoreCase(secundari));
+        System.out.println("\"" + principal + "\".equalsIgnoreCase(\"" + secundari + "\"): " + principal.equalsIgnoreCase(secundari));
         
         //isBlank
         System.out.println("\"" + principal + "\".isBlank(): " + principal.isBlank());
@@ -40,7 +40,7 @@ public class InformeString {
         System.out.println("\"" + principal + "\".charAt(" + positiu +"): " + principal.charAt(positiu));
         
         //concat
-        System.out.println("\"" + principal + "\".concat(" + secundari +"): " + principal.concat(secundari));
+        System.out.println("\"" + principal + "\".concat(\"" + secundari +"\"): " + principal.concat(secundari));
         
         //repeat
         System.out.println("\"" + principal + "\".repeat(" + positiu +"): " + principal.repeat(positiu));
