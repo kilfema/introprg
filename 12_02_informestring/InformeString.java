@@ -25,7 +25,7 @@ public class InformeString {
         System.out.println("\"" + principal + "\".endsWith(\"" + secundari + "\"): " + principal.endsWith(secundari));
         
         //equals
-        System.out.println("\"" + principal + "\".equals(" + secundari + "): " + principal.equals(secundari));
+        System.out.println("\"" + principal + "\".equals(\"" + secundari + "\"): " + principal.equals(secundari));
         
         //equalsIgnoreCase
         System.out.println("\"" + principal + "\".equalsIgnoreCase(" + secundari + "): " + principal.equalsIgnoreCase(secundari));
