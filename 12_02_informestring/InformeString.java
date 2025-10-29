@@ -19,10 +19,10 @@ public class InformeString {
         System.out.println("\"" + principal + "\".length(): " + principal.length());
         
         //startsWith
-        System.out.println("\"" + principal + "\".startsWith(" + secundari + "): " + principal.startsWith(secundari));
+        System.out.println("\"" + principal + "\".startsWith(\"" + secundari + "\"): " + principal.startsWith(secundari));
         
         //endsWith
-        System.out.println("\"" + principal + "\".endsWith(" + secundari + "): " + principal.endsWith(secundari));
+        System.out.println("\"" + principal + "\".endsWith(\"" + secundari + "\"): " + principal.endsWith(secundari));
         
         //equals
         System.out.println("\"" + principal + "\".equals(" + secundari + "): " + principal.equals(secundari));
