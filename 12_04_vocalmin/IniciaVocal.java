@@ -3,7 +3,7 @@
  * Aquest programa rep una entrada de text i retorna si comença amb vocal o no.
  */
  
-public class VocalMin {
+public class IniciaVocal {
     public static void main(String[] args) {
         
         //Demana text
