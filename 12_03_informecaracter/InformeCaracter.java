@@ -15,7 +15,7 @@ public class InformeCaracter {
         
 
         //comproba si text i posició està vuit
-        if ((text.length() == 0) || (posicio.length() == 0) || (text.isEmpty() || text.isBlank()) || (posicio.isEmpty() || posicio.isBlank())) {
+        if ((text == null) || (posicio.length() == 0) || (text.isEmpty() || text.isBlank()) || (posicio.isEmpty() || posicio.isBlank())) {
             System.out.println("Error");
         
         } else {
