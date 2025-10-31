@@ -10,7 +10,7 @@ public class InformeCaracter {
         System.out.println("Text?");
         String text = Entrada.readLine();
         
-        System.out.println("Posicio?");
+        System.out.println("Posició?");
         int posicio = Integer.parseInt(Entrada.readLine());
         
         //comproba si text està vuit
@@ -27,34 +27,34 @@ public class InformeCaracter {
             char caracter = text.charAt(posicio);
                   
             //getName
-            System.out.println("Character.getName(\'" + caracter + "\') : " + Character.getName(caracter));
+            System.out.println("Character.getName(\'" + caracter + "\'): " + Character.getName(caracter));
             
             //isDigit
-            System.out.println("Character.isDigit(\'" + caracter + "\') : " + Character.isDigit(caracter));
+            System.out.println("Character.isDigit(\'" + caracter + "\'): " + Character.isDigit(caracter));
             
             //isJavaIdentifierStart
-            System.out.println("Character.isJavaIdentifierStart(\'" + caracter + "\') : " + Character.isJavaIdentifierStart(caracter));
+            System.out.println("Character.isJavaIdentifierStart(\'" + caracter + "\'): " + Character.isJavaIdentifierStart(caracter));
             
             //isJavaIdentifierPartisDigit
-            System.out.println("Character.isJavaIdentifierPart(\'" + caracter + "\') : " + Character.isJavaIdentifierPart(caracter));
+            System.out.println("Character.isJavaIdentifierPart(\'" + caracter + "\'): " + Character.isJavaIdentifierPart(caracter));
             
             //isLetter
-            System.out.println("Character.isLetter(\'" + caracter + "\') : " + Character.isLetter(caracter));
+            System.out.println("Character.isLetter(\'" + caracter + "\'): " + Character.isLetter(caracter));
             
             //isLowerCase
-            System.out.println("Character.isLowerCase(\'" + caracter + "\') : " + Character.isLowerCase(caracter));
+            System.out.println("Character.isLowerCase(\'" + caracter + "\'): " + Character.isLowerCase(caracter));
             
             //isUpperCase
-            System.out.println("Character.isUpperCase(\'" + caracter + "\') : " + Character.isUpperCase(caracter));
+            System.out.println("Character.isUpperCase(\'" + caracter + "\'): " + Character.isUpperCase(caracter));
             
             //isWhitespace
-            System.out.println("Character.isWhitespace(\'" + caracter + "\') : " + Character.isWhitespace(caracter));
+            System.out.println("Character.isWhitespace(\'" + caracter + "\'): " + Character.isWhitespace(caracter));
             
             //toLowerCase
-            System.out.println("Character.toLowerCase(\'" + caracter + "\') : " + Character.toLowerCase(caracter));
+            System.out.println("Character.toLowerCase(\'" + caracter + "\'): " + Character.toLowerCase(caracter));
             
             //toUpperCase
-            System.out.println("Character.toUpperCase(\'" + caracter + "\') : " + Character.toUpperCase(caracter));
+            System.out.println("Character.toUpperCase(\'" + caracter + "\'): " + Character.toUpperCase(caracter));
         }
         
     }
