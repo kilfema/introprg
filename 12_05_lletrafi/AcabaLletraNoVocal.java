@@ -21,7 +21,7 @@ public class AcabaLletraNoVocal {
             
                 System.out.println(String.format("\"%s\" no finalitza amb lletra no vocal", text));
             } else {
-                System.out.println(String.format("\"%s\" finalitza amb lletra no vocal '%c'", text, ultimaLletra));
+                System.out.println(String.format("\"%s\" finalitza amb la lletra no vocal '%c'", text, ultimaLletra));
             } 
         }
 
