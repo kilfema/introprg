@@ -23,10 +23,10 @@ public class MatriculaValida {
             
         //confirma si les posicions de les lletres ho son i si són majuscula
         boolean sonLletra = (
-            (matricula.charAt(0) > 64 && matricula.charAt(0) >91) &&
-            (matricula.charAt(1) > 64 && matricula.charAt(1) >91) &&
-            (matricula.charAt(5) > 64 && matricula.charAt(5) >91) &&
-            (matricula.charAt(6) > 64 && matricula.charAt(6) >91));
+            (matricula.charAt(0) > 64 && matricula.charAt(0) < 91) &&
+            (matricula.charAt(1) > 64 && matricula.charAt(1) < 91) &&
+            (matricula.charAt(5) > 64 && matricula.charAt(5) < 91) &&
+            (matricula.charAt(6) > 64 && matricula.charAt(6) < 91));
             
         //confirma si les lletres son caracters no permesos
         boolean esExcepcio = ( 
