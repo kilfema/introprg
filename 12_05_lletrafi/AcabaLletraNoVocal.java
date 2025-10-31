@@ -11,7 +11,7 @@ public class AcabaLletraNoVocal {
         String text = Entrada.readLine();
         
         if (text.isEmpty() || text.isBlank()) {
-            System.out.println("EL text no té lletres");
+            System.out.println("El text no té lletres");
         } else {
             //extrae ultima letra y cambia a minuscula
             char ultimaLletra = text.charAt(text.length()-1);
