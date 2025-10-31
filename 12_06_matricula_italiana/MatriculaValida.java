@@ -22,7 +22,11 @@ public class MatriculaValida {
         boolean sonNumero = Character.isDigit(matricula.charAt(2)) && Character.isDigit(matricula.charAt(3)) && Character.isDigit(matricula.charAt(4));
             
         //confirma si les posicions de les lletres ho son i si són majuscula
-        boolean sonLletra = (Character.isLetter(matricula.charAt(0)) && Character.isUpperCase(matricula.charAt(0))) && (Character.isLetter(matricula.charAt(1)) && Character.isUpperCase(matricula.charAt(1))) && (Character.isLetter(matricula.charAt(5)) && Character.isUpperCase(matricula.charAt(5))) && (Character.isLetter(matricula.charAt(6)) && Character.isUpperCase(matricula.charAt(6)));
+        boolean sonLletra = (
+            (matricula.charAt(0) > 64 && matricula.charAt(0) >91) &&
+            (matricula.charAt(1) > 64 && matricula.charAt(1) >91) &&
+            (matricula.charAt(5) > 64 && matricula.charAt(5) >91) &&
+            (matricula.charAt(6) > 64 && matricula.charAt(6) >91));
             
         //confirma si les lletres son caracters no permesos
         boolean esExcepcio = ( 
