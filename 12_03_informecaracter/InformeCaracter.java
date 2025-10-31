@@ -19,7 +19,7 @@ public class InformeCaracter {
         int posicio = Integer.parseInt(Entrada.readLine()); 
 
             //comprova si la posicio està fora de rang   
-            if (posicio > text.length()) {
+            if (posicio < 0 || posicio > text.length()) {
                 System.out.println("Fora de rang");
              
              //mostra resultats   
