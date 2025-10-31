@@ -13,14 +13,14 @@ public class MatriculaValida {
         matricula = matricula.toUpperCase(); //convierte en mayuscula
         
         //confirma si té llargada minima
-        boolean teLlargadaMinima = (matricula.length() == 6);
+        boolean teLlargadaNecessaria = (matricula.length() == 7);
         
         boolean esCorrecte = false;
         
         
-        if (teLlargadaMinima) {
+        if (teLlargadaNecessaria) {
         //confirma si les posicions dels números ho son
-        boolean sonNumero = Character.isDigit(matricula.charAt(2)) && Character.isDigit(matricula.charAt(2)) && Character.isDigit(matricula.charAt(2));
+        boolean sonNumero = Character.isDigit(matricula.charAt(2)) && Character.isDigit(matricula.charAt(3)) && Character.isDigit(matricula.charAt(4));
             
         //confirma si les posicions de les lletres ho son
         boolean sonLletra = Character.isLetter(matricula.charAt(0)) && Character.isLetter(matricula.charAt(1)) && Character.isLetter(matricula.charAt(5)) && Character.isLetter(matricula.charAt(6));
@@ -33,7 +33,7 @@ public class MatriculaValida {
             (matricula.charAt(6) == 'I' || matricula.charAt(6) == 'O' || matricula.charAt(6) == 'Q' || matricula.charAt(6) == 'U')
             );
 
-            if (teLlargadaMinima && sonLletra && sonNumero && !(esExcepcio)) {
+            if (sonLletra && sonNumero && !(esExcepcio)) {
             esCorrecte = true;
             }
        }
