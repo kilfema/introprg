@@ -17,13 +17,13 @@ public class AcabaLletraNoVocal {
             char ultimaLletra = text.charAt(text.length()-1);
             char ultimaLletraMin = Character.toLowerCase(ultimaLletra);
             
-            if (ultimaLletraMin == 'a' || ultimaLletraMin == 'e' || ultimaLletraMin == 'i' || ultimaLletraMin == 'o' || ultimaLletraMin == 'u') {
-            
+            if (!(Character.isLetter(ultimaLletra)) || ultimaLletraMin == 'a' || ultimaLletraMin == 'e' || ultimaLletraMin == 'i' || ultimaLletraMin == 'o' || ultimaLletraMin == 'u') {
                 System.out.println(String.format("\"%s\" no finalitza amb lletra no vocal", text));
+                
             } else {
                 System.out.println(String.format("\"%s\" finalitza amb la lletra no vocal '%c'", text, ultimaLletra));
-            } 
-        }
 
+            }
+        }
     }
 }
