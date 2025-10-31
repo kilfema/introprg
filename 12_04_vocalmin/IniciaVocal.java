@@ -12,23 +12,25 @@ public class IniciaVocal {
         
         boolean estaVuit = text.isBlank() || text.isEmpty(); // està vuit?
 
-        char primeraChar= text.charAt(0); //identifica primera lletra
-        
-        String primeraString = String.valueOf(primeraChar); //transforma a String
-        
-        //compara si string és equivalent a alguna de les vocals
-        boolean esVocal = primeraString.equalsIgnoreCase("a") || primeraString.equalsIgnoreCase("e") || primeraString.equalsIgnoreCase("i") || primeraString.equalsIgnoreCase("o") || primeraString.equalsIgnoreCase("u");
-        
         
         //mostra missatge del boleà de comparaió
-        if (esVocal) {
-            System.out.println(String.format("\"%s\" inicia amb la vocal '%c'", text, primeraChar));
-        
-        } else if (text.isBlank()) {
+        if (text.isBlank()) {
             System.out.println("El text no té lletres");
-           
-        } else  {
-            System.out.println(String.format("\"%s\" no inicia amb vocal", text));
-        }
+            
+        } else {
+            
+            char primeraChar= text.charAt(0); //identifica primera lletra       
+            String primeraString = String.valueOf(primeraChar); //transforma a String
+        
+            //compara si string és equivalent a alguna de les vocals
+            boolean esVocal = primeraString.equalsIgnoreCase("a") || primeraString.equalsIgnoreCase("e") || primeraString.equalsIgnoreCase("i") || primeraString.equalsIgnoreCase("o") || primeraString.equalsIgnoreCase("u");
+            
+                if (esVocal){
+                    System.out.println(String.format("\"%s\" inicia amb la vocal '%c'", text, primeraChar));
+                    
+                 } else {
+                    System.out.println(String.format("\"%s\" no inicia amb vocal", text));
+                 }
+         }
     }
 }
