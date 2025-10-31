@@ -10,25 +10,22 @@ public class InformeCaracter {
         System.out.println("Text?");
         String text = Entrada.readLine();
         
-        System.out.println("Posició?"); 
-        String posicio = Entrada.readLine();
-        
-
-        //comproba si text i posició està vuit
-        if ((text == null) || (posicio.length() == 0) || (text.isEmpty() || text.isBlank()) || (posicio.isEmpty() || posicio.isBlank())) {
+        if (text.isEmpty() || text.isBlank()) {
             System.out.println("Error");
-        
+            
         } else {
-            int posicioInt = Integer.parseInt(posicio); //converteix posicio en int
+        
+        System.out.println("Posició?"); 
+        int posicio = Integer.parseInt(Entrada.readLine()); 
 
             //comprova si la posicio està fora de rang   
-            if (posicioInt > text.length()) {
+            if (posicio > text.length()) {
                 System.out.println("Fora de rang");
              
              //mostra resultats   
             } else {
             
-                char caracter = text.charAt(posicioInt);
+                char caracter = text.charAt(posicio);
                       
                 //getName
                 System.out.println("Character.getName(\'" + caracter + "\'): " + Character.getName(caracter));
