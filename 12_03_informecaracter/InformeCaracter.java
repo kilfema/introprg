@@ -13,9 +13,11 @@ public class InformeCaracter {
         System.out.println("Posició?"); 
         String posicio = Entrada.readLine();
         
+        if (text.isEmpty() || text.isBlank()) { text = ""; }
+        if (posicio.isEmpty() || posicio.isBlank()) { posicio = ""; }
         
         //comproba si text i posició està vuit
-        if ((text.isEmpty() || text.isBlank()) || (posicio.isEmpty() || posicio.isBlank())) {
+        if (text == "" || posicio == "") {
             System.out.println("Error");
         
         } else {
