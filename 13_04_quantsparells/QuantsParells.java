@@ -25,6 +25,6 @@ public class QuantsParells {
         }
         
         // mostrem el resultat
-        System.out.println("Nombre de parells introduïts:  " + quantitatParells);
+        System.out.println("Nombre de parells introduïts: " + quantitatParells);
     }
 }
