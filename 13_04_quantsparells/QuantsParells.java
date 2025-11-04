@@ -16,10 +16,9 @@ public class QuantsParells {
             //demana valor
             System.out.println("Introdueix un valor");
             valor = Integer.parseInt(Entrada.readLine());
-            
-            
+ 
             //si el valor és parell
-            if (valor % 2 == 0) {
+            if (valor % 2 == 0 && valor >= 0) {
                 quantitatParells = quantitatParells + 1;            
             }
         }
