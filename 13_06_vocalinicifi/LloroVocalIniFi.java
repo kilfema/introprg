@@ -12,7 +12,12 @@ public class LloroVocalIniFi {
             //demana valor
             System.out.println("Paraula?");
             String text = Entrada.readLine();
- 
+            
+            if (text.isEmpty() || text.isBlank()) { //si està vuida
+                    estaBuida = true;
+                    
+            } else {
+            
             String textMinus = text.toLowerCase(); //pasa text a minuscula
             
             char primeraLletra = textMinus.charAt(0);
@@ -23,10 +28,8 @@ public class LloroVocalIniFi {
             
                 if (esVocal) { //si es vocal, repeteix
                     System.out.println("Repeteixo: " + text);
-                
-                } else if (text.isEmpty() || text.isBlank()) { //si està vuida
-                    estaBuida = true;     
                 }
+            }
         }
 
         // acaba el bucle i es despedeix
