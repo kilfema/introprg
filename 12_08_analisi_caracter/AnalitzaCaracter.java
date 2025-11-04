@@ -49,7 +49,7 @@ public class AnalitzaCaracter {
                 tipusCaracter = "un dígit";
                 
             } else {
-                tipusCaracter = "un altre";
+                tipusCaracter = "una altra cosa";
             }
                
             System.out.println(String.format("\'%c\' és %s", caracter, tipusCaracter));
