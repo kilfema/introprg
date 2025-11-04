@@ -18,17 +18,17 @@ public class LloroVocalIniFi {
                     
             } else {
             
-            String textMinus = text.toLowerCase(); //pasa text a minuscula
-            
-            char primeraLletra = textMinus.charAt(0);
-            
-            char ultimaLletra = textMinus.charAt(textMinus.length()-1);
-            
-            boolean esVocal = primeraLletra == 'a' || primeraLletra == 'e' || primeraLletra == 'i' || primeraLletra == 'o' || primeraLletra == 'u'; //comproba si la primera lletra és alguna vocal
-            
-                if (esVocal) { //si es vocal, repeteix
-                    System.out.println("Repeteixo: " + text);
-                }
+                String textMinus = text.toLowerCase(); //pasa text a minuscula
+                
+                char primeraLletra = textMinus.charAt(0);
+                
+                char ultimaLletra = textMinus.charAt(textMinus.length()-1);
+                
+                boolean esVocal = primeraLletra == 'a' || primeraLletra == 'e' || primeraLletra == 'i' || primeraLletra == 'o' || primeraLletra == 'u'; //comproba si la primera lletra és alguna vocal
+                
+                    if (esVocal && primeraLletra == ultimaLletra) { //si es vocal, repeteix
+                        System.out.println("Repeteixo: " + text);
+                    }
             }
         }
 
