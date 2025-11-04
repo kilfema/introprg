@@ -18,8 +18,8 @@ public class QuantsParells {
             valor = Integer.parseInt(Entrada.readLine());
             
             
-            //si el valor és parell i no és 0
-            if (valor % 2 == 0 && !(valor == 0)) {
+            //si el valor és parell
+            if (valor % 2 == 0) {
                 quantitatParells = quantitatParells + 1;            
             }
         }
