@@ -32,7 +32,7 @@ public class Estadistiques {
             valorActual = Integer.parseInt(Entrada.readLine());       
         }
         
-        double mitjana = 0.0;
+        float mitjana = 0;
         
         
         //si la suma de valores és mayor que 0 -- evita dividir por 0
