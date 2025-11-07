@@ -34,18 +34,18 @@ public class Estadistiques {
             valorActual = Integer.parseInt(Entrada.readLine());       
         }
         
-        double mitjana = 0;
+        float mitjana = 0;
   
         //si la suma de valores és mayor que 0 -- evita dividir por 0
-        if (sumaValors > 0) {
+        if (quantitatValors > 0) {
             
-            mitjana = (double)sumaValors / quantitatValors;  //calcula media 
+            mitjana = (float)sumaValors / quantitatValors;  //calcula media 
             
            
             System.out.println(String.format("El mínim és: %d\nLa mitjana és: %f\nEl màxim és: %d", valorMinim, mitjana, valorMaxim)); 
             
             
-        } else if (valorActual < 0) {
+        } else {
             System.out.println("Cap valor vàlid introduït");
         }
 
