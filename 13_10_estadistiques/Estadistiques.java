@@ -24,7 +24,9 @@ public class Estadistiques {
             if (valorActual > valorMaxim) {
                 valorMaxim = valorActual; //actualiza valor Maximo
                 
-            } else if (valorActual < valorMinim) {
+            } 
+            
+            if (valorActual < valorMinim) {
                      valorMinim = valorActual;//actualiza valor Minimo
             }
             
@@ -36,7 +38,9 @@ public class Estadistiques {
   
         //si la suma de valores és mayor que 0 -- evita dividir por 0
         if (sumaValors > 0) {
+            
             mitjana = sumaValors / quantitatValors;  //calcula media 
+            
             if(sumaValors % quantitatValors == 0){
             System.out.println(String.format("El mínim és: %d\nLa mitjana és: %.1f\nEl màxim és: %d", valorMinim, mitjana, valorMaxim)); 
             }else{
