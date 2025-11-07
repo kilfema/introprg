@@ -6,7 +6,7 @@
 public class SequenciaCreixent {
     public static void main(String[] args) {
     
-    System.out.println("Introdueix un valor");
+    System.out.println("Introdueix un valor:");
     int valorActual = Integer.parseInt(Entrada.readLine());
     
     int valorMaxim = 0;
