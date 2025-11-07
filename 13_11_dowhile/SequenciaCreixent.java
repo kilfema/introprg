@@ -18,7 +18,7 @@ public class SequenciaCreixent {
             count ++;
             valorMaxim = valorActual;
             
-            System.out.println("Introdueix un valor");
+            System.out.println("Introdueix un valor:");
             valorActual = Integer.parseInt(Entrada.readLine());
                
         } while (valorActual > valorMaxim);
