@@ -23,7 +23,7 @@ public class SequenciaCreixent {
                
         } while (valorActual > valorMaxim);
     
-    System.out.println("La longitud de la secüència creixent: " + count);
+    System.out.println("Longitud de la secüència creixent: " + count);
     
     }
 }
