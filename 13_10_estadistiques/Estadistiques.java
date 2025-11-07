@@ -42,7 +42,7 @@ public class Estadistiques {
             mitjana = (float)sumaValors / quantitatValors;  //calcula media 
             
            
-            System.out.println(String.format("El mínim és: %d\nLa mitjana és: %f\nEl màxim és: %d", valorMinim, mitjana, valorMaxim)); 
+            System.out.println(String.format("El mínim és: %d\nLa mitjana és: %.1f\nEl màxim és: %d", valorMinim, mitjana, valorMaxim)); 
             
             
         } else {
