@@ -12,6 +12,8 @@ public class EndevinaNombre {
     
     boolean haEncertat = false;
     
+    System.out.println("Ves introduint enters entre 1 i 100 fins que encertis el que jo he pensat");
+    
     while (!haEncertat) {
       
         //demanaValor   
