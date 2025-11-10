@@ -8,15 +8,16 @@ public class EndevinaNombre {
     
     //valor pensat
     int valorPensat = Integer.parseInt(args[0]);
+    int valorActual = 0;
     
-    System.out.println("Ves introduint enters entre 1 i 100 fins que encertis el que jo he pensat\nIntrodueix un valor");
-
-    int valorActual = Integer.parseInt(Entrada.readLine());
-    
-    boolean haEncertat = valorPensat == valorActual;
+    boolean haEncertat = false;
     
     while (!haEncertat) {
-    
+      
+        //demanaValor   
+        System.out.println("Introdueix un valor");
+        valorActual = Integer.parseInt(Entrada.readLine());
+        
         //si menor de 1
         if (valorActual<1) {
             System.out.println("Com a mínim 1");
@@ -32,16 +33,14 @@ public class EndevinaNombre {
             
             } else if (valorActual > valorPensat) {
                 System.out.println("És més petit que " + valorActual);  
+                
+            } else {
+                System.out.println("Has encertat!");
+                haEncertat = true;
             }
-        }
-    
-    //torna a demanar valor    
-    System.out.println("Introdueix un valor");
-    valorActual = Integer.parseInt(Entrada.readLine());
-        
+        }      
     } 
-    
-    System.out.println("Has encertat!");
+   
 
     }
 }
