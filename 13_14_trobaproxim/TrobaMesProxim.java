@@ -43,7 +43,7 @@ public class TrobaMesProxim {
         distanciaAncora = Math.abs(ancora - valorDonat);
         }
         
-        System.out.println("El valor introduït més próxim a " + ancora + " és " + valorMesProxim);
+        System.out.println("El valor introduït més pròxim a " + ancora + " és " + valorMesProxim);
         
     }
     
