@@ -1,6 +1,8 @@
 /*
 * Kilian Fernández - 6/11/2025
-* Programa que demana valors indefinidament
+* Programa que demana una àncora i després un conjunt de valors enters positius.
+* Mostra quin valor és més pròxim a l’àncora, escollint el més petit en cas d’empat.
+* Finalitza si l’àncora no és positiva o no s’introdueix cap valor vàlid.
 *
 */
 public class TrobaMesProxim {
