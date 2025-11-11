@@ -20,8 +20,8 @@ public class TrobaMesProxim {
         
         //mentre primer valor no sigui positiu o 0, error i segueix demanant un valor
         if (valorDonat < 0) {
-            System.out.println("No s'ha introduït cap valor positiu\nIntrodueix un valor");
-            valorDonat = Integer.parseInt(Entrada.readLine());
+            System.out.println("No s'ha introduït cap valor positiu");
+            
         } else {
         
             int distanciaAncora = Math.abs(ancora - valorDonat); //proximitat entre ancora i valor donat
