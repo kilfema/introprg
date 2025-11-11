@@ -3,7 +3,7 @@
 * Programa que demana valors indefinidament
 *
 */
-public class EndevinaCancel {
+public class EndevinaNombre {
     public static void main(String[] args) {
     
     //valor pensat
