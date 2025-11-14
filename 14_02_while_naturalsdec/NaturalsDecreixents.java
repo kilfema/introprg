@@ -10,7 +10,7 @@ public class NaturalsDecreixents {
     int i = Integer.parseInt(args[0]);
     
     if (i<1) { //si és menor que 1
-        System.out.println("Cap valor decreixent entre 1 i " + i);  
+        System.out.println("Cap valor decreixent entre " + i + " i 1");  
     
     } else {
         
