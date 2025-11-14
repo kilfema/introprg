@@ -37,6 +37,8 @@ public class NaturalsEntre {
                         comptador += salt;
                     }
                     
+                    System.out.println(valorFinal);
+                
                 } else {System.out.println(error);}
             
             } else {System.out.println(error);}
