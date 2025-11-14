@@ -28,7 +28,7 @@ public class NaturalsEntre {
             
                 if (salt > 0) {
                 
-                System.out.println(salt);
+                System.out.println(valorInicial);
                 int comptador = valorInicial + salt;
                 
                     while (comptador < valorFinal) {
