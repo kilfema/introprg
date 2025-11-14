@@ -14,7 +14,7 @@ public class NaturalsEntre {
     int valorInicial = Integer.parseInt(Entrada.readLine());
     String error = "Valor no vàlid"; //missatge d'error
     
-        if (valorInicial > 0) { //comprova que el primer valor no sigui negatiu
+        if (valorInicial >= 0) { //comprova que el primer valor no sigui negatiu
             
             //demana valor final
             System.out.println("Valor final?");
