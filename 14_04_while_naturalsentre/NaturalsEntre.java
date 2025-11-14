@@ -37,7 +37,7 @@ public class NaturalsEntre {
                         comptador += salt;
                     }
                     
-                    System.out.println(valorFinal);
+                    if (comptador == valorFinal) {System.out.println(valorFinal);}
                 
                 } else {System.out.println(error);}
             
