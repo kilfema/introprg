@@ -8,10 +8,10 @@
 public class MostraInterval {
     public static void main(String[] args) {
     
-    System.out.println("primer?");
+    System.out.println("inici?");
     int primer = Integer.parseInt(Entrada.readLine());
     
-    System.out.println("segon?");
+    System.out.println("final?");
     int segon = Integer.parseInt(Entrada.readLine());
     
     if (primer < segon) {
