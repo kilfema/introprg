@@ -14,26 +14,19 @@ public class SumaInterval {
     System.out.println("segon?");
     int segonEntrada = Integer.parseInt(Entrada.readLine());
     
-    int valorSuma = primerEntrada;
-    int valorFinal = segonEntrada;
+    int inici = primerEntrada;
+    int vfinal = segonEntrada;
     
     if (primerEntrada > segonEntrada) {
-        valorSuma = segonEntrada;
-        valorFinal = primerEntrada;
+        inici = segonEntrada;
+        vfinal = primerEntrada;
     }
 
-    int resultat = 0;
+    int suma = 0;
     
-    
-    for (int i = 0; valorSuma <= valorFinal; resultat = valorSuma + i) {
-        
-        resultat = valorSuma + i;
-        
-        System.out.println(i + " + " +  valorSuma + " = " + resultat);
-        
-        i = resultat;
-        
-        valorSuma++;
+    for (int i = inici; i <= vfinal; i++) {
+        System.out.println(suma + " + " + i + " = " + (suma+i));
+        suma+= i; 
     }
         
         
