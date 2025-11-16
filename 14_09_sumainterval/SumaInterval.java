@@ -24,7 +24,6 @@ public class SumaInterval {
 
     int resultat = 0;
     
-    System.out.println(valorSuma);
     
     for (int i = 0; valorSuma <= valorFinal; resultat = valorSuma + i) {
         
