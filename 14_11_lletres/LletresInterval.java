@@ -33,7 +33,7 @@ public class LletresInterval {
 
         
         for (char i = lletra; i < acabaAmb; i++) {
-            
+
             System.out.print((char) i);
             
             if (i == 'Z' || i == 'z') {
@@ -44,12 +44,10 @@ public class LletresInterval {
                 if (i == 'z') {
                 i = 'a';
                 acabaAmb = 'a' + (saltsRestants - 1);
-                System.out.print((char) i);
                 
                 } else if (i == 'Z') {
                 i = 'A';
                 acabaAmb = 'A' + (saltsRestants - 1);
-                System.out.print((char) i);
                 }
             }
 
