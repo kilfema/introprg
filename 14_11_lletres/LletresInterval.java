@@ -11,7 +11,6 @@ public class LletresInterval {
     System.out.println("lletra?");
     String entradaString = Entrada.readLine();
     char lletra = entradaString.charAt(0);
-    System.out.println(lletra+1);
     
     if (entradaString.length() > 1) {
         System.out.println("ERROR: cal especificar una única lletra.");
