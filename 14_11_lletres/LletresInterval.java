@@ -12,7 +12,7 @@ public class LletresInterval {
     String entradaString = Entrada.readLine();
     
     if (entradaString.length() > 1) {
-        System.out.println("Error");
+        System.out.println("ERROR: cal especificar una única lletra.");
         
     } else {
         
