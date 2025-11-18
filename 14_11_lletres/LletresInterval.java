@@ -11,47 +11,47 @@ public class LletresInterval {
     System.out.println("lletra?");
     String entradaString = Entrada.readLine();
     char lletra = entradaString.charAt(0);
+    System.out.println(lletra+1);
     
     if (entradaString.length() > 1) {
         System.out.println("ERROR: cal especificar una única lletra.");
+    
         
-        if ((lletra < 'a' && lletra > 'z') || lletra < 'A' && lletra > 'Z') {
-            System.out.println("Error"); 
-        
+    } else if (!Character.isLetter(lletra)) {
+         System.out.println("ERROR: '" + lletra + "' no és una lletra vàlida."); 
+  
     } else {
-        
-    System.out.println("quantes?");
-    int numero = Integer.parseInt(Entrada.readLine());
+         System.out.println("quantes?");
+         int numero = Integer.parseInt(Entrada.readLine());
 
-        if (numero < 1) {
-            System.out.println("Error");
-        
-        } else {
-        
-        int acabaAmb = lletra + numero;
-
-        for (char i = lletra; i < acabaAmb; i++) {
-
-            System.out.print((char) i);
+            if (numero < 1) {
+                System.out.println("EROR: una com a mínim.");
             
-            if (i == 'Z' || i == 'z') {
+            } else {
+            
+            int acabaAmb = lletra + numero;
+
+            for (char i = lletra; i < acabaAmb; i++) {
+
+                System.out.print((char) i);
                 
-                int saltsRealitzats = i - lletra;    
-                int saltsRestants = numero - saltsRealitzats;
-                
-                if (i == 'z') {
-                i = 96;
-                acabaAmb = 'a' + (saltsRestants - 1);
-                
-                } else if (i == 'Z') {
-                i = 64;
-                acabaAmb = 'A' + (saltsRestants - 1);
+                if (i == 'Z' || i == 'z') {
+                    
+                    int saltsRealitzats = i - lletra;    
+                    int saltsRestants = numero - saltsRealitzats;
+                    
+                    if (i == 'z') {
+                    i = 96;
+                    acabaAmb = 'a' + (saltsRestants - 1);
+                    
+                    } else if (i == 'Z') {
+                    i = 64;
+                    acabaAmb = 'A' + (saltsRestants - 1);
+                    }
                 }
             }
+            }
         }
-        }
-        }
-    }
     
     }    
 }
