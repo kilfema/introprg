@@ -9,29 +9,29 @@ public class LletresInterval {
     public static void main(String[] args) {
     
     System.out.println("lletra?");
-    char lletra = Entrada.readLine().charAt(0);
+    String entradaString = Entrada.readLine();
     
-    System.out.println("quantes?");
-    int numero = Integer.parseInt(Entrada.readLine());
-    
-    if (!Character.isLetter(lletra)) {
-        System.out.println("Error");        
-        
-        lletra = Character.toLowerCase(lletra);
-        
-    if ((lletra < 'a' && lletra > 'z')) {
-         System.out.println("Error");        
-            
-    if (numero < 1) {
-         System.out.println("Error");
-    }}    
+    if (entradaString.length() > 1) {
+        System.out.println("Error");
         
     } else {
         
+    System.out.println("quantes?");
+    int numero = Integer.parseInt(Entrada.readLine());
+    
+    char lletra = entradaString.charAt(0);
+        
+        if ((lletra < 'a' && lletra > 'z') || lletra < 'A' && lletra > 'Z') {
+            System.out.println("Error");        
+        } else {
+           
+        if (numero < 1) {
+            System.out.println("Error");
+        
+        } else {
+        
         int acabaAmb = lletra + numero;
-        
 
-        
         for (char i = lletra; i < acabaAmb; i++) {
 
             System.out.print((char) i);
@@ -44,15 +44,18 @@ public class LletresInterval {
                 if (i == 'z') {
                 i = 'a';
                 acabaAmb = 'a' + (saltsRestants - 1);
+                System.out.print('a');
                 
                 } else if (i == 'Z') {
                 i = 'A';
                 acabaAmb = 'A' + (saltsRestants - 1);
+                System.out.print('A');
                 }
             }
-
         }
-
         }
+        }
+    }
+    
     }    
 }
