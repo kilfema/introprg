@@ -29,7 +29,7 @@ public class LletresInterval {
          int numero = Integer.parseInt(Entrada.readLine());
 
             if (numero < 1) {
-                System.out.println("EROR: una com a mínim.");
+                System.out.println("ERROR: una com a mínim.");
             
             } else {
             
