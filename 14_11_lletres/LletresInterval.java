@@ -10,21 +10,19 @@ public class LletresInterval {
     
     System.out.println("lletra?");
     String entradaString = Entrada.readLine();
+    char lletra = entradaString.charAt(0);
     
     if (entradaString.length() > 1) {
         System.out.println("ERROR: cal especificar una única lletra.");
+        
+        if ((lletra < 'a' && lletra > 'z') || lletra < 'A' && lletra > 'Z') {
+            System.out.println("Error"); 
         
     } else {
         
     System.out.println("quantes?");
     int numero = Integer.parseInt(Entrada.readLine());
-    
-    char lletra = entradaString.charAt(0);
-        
-        if ((lletra < 'a' && lletra > 'z') || lletra < 'A' && lletra > 'Z') {
-            System.out.println("Error");        
-        } else {
-           
+
         if (numero < 1) {
             System.out.println("Error");
         
