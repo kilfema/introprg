@@ -16,7 +16,7 @@ public class LletresInterval {
         System.out.println("ERROR: cal especificar una única lletra.");
     
         
-    } else if (!((lletra < 'a' && lletra > 'z') || (lletra < 'A' && lletra > 'Z'))) {
+    } else if (!((lletra >= 'a' && lletra <= 'z') || (lletra >= 'A' && lletra <= 'Z'))) {
          System.out.println("ERROR: '" + lletra + "' no és una lletra vàlida."); 
   
     } else {
