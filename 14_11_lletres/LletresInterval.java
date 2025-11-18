@@ -42,14 +42,12 @@ public class LletresInterval {
                 int saltsRestants = numero - saltsRealitzats;
                 
                 if (i == 'z') {
-                i = 'a';
+                i = 96;
                 acabaAmb = 'a' + (saltsRestants - 1);
-                System.out.print('a');
                 
                 } else if (i == 'Z') {
-                i = 'A';
+                i = 64;
                 acabaAmb = 'A' + (saltsRestants - 1);
-                System.out.print('A');
                 }
             }
         }
