@@ -1,7 +1,7 @@
 /*
 * Kilian Fernández - 14/11/2025
 *
-*Programa que demana dos enters i suma tots els valors entre ells (incloent-los), mostrant cada pas del càlcul. *Comença sempre pel nombre més petit i acumula la suma fins al més gran.
+*Programa que demana una lletra i un número. Retorna el matiex número de lletres següents.
 *
 */
 
@@ -16,7 +16,7 @@ public class LletresInterval {
         System.out.println("ERROR: cal especificar una única lletra.");
     
         
-    } else if (!Character.isLetter(lletra)) {
+    } else if (!((lletra < 'a' && lletra > 'z') || (lletra < 'A' && lletra > 'Z'))) {
          System.out.println("ERROR: '" + lletra + "' no és una lletra vàlida."); 
   
     } else {
