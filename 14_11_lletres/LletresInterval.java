@@ -10,6 +10,11 @@ public class LletresInterval {
     
     System.out.println("lletra?");
     String entradaString = Entrada.readLine();
+    
+    if (entradaString.isEmpty()) {
+        System.out.println("ERROR: no has introduït cap lletra.");
+    } else {
+    
     char lletra = entradaString.charAt(0);
     
     if (entradaString.length() > 1) {
@@ -51,6 +56,7 @@ public class LletresInterval {
             }
             }
         }
+    }
     
     }    
 }
