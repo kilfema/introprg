@@ -7,21 +7,20 @@ public class Naturals {
     public static void main(String[] args) {
     
     //valor inicial 
-    int i = Integer.parseInt(args[0]);
+    int valor = Integer.parseInt(args[0]);
     
-    if (i<1) { //si és menor que 1
-        System.out.println("Cap valor creixent entre 1 i " + i);  
+    if (valor<1) { //si és menor que 1
+        System.out.println("Cap valor creixent entre 1 i " + valor);  
     
     } else {
         
-        int comptador = 1;
 
-        for (; comptador != i; comptador++) {
-            System.out.println(comptador);
+        for (int i = 1; i != valor; i++) {
+            System.out.println(i);
         }
         
     //imprimeix valor final
-    System.out.println(i);
+    System.out.println(valor);
     
     }
     
