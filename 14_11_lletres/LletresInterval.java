@@ -12,7 +12,7 @@ public class LletresInterval {
     String entradaString = Entrada.readLine();
     
     if (entradaString.isEmpty()) {
-        System.out.println("ERROR: no has introduït cap lletra.");
+        System.out.println("ERROR: cal especificar una única lletra.");
     } else {
     
     char lletra = entradaString.charAt(0);
