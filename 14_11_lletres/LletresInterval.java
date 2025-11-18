@@ -5,7 +5,7 @@
 *
 */
 
-public class MostraInterval {
+public class LletresInterval {
     public static void main(String[] args) {
     
     System.out.println("lletra?");
@@ -19,28 +19,42 @@ public class MostraInterval {
         
         lletra = Character.toLowerCase(lletra);
         
-        if ((lletra < 'a' && lletra > 'z')) {
-            System.out.println("Error");        
+    if ((lletra < 'a' && lletra > 'z')) {
+         System.out.println("Error");        
             
-            if (numero < 1) {
-                System.out.println("Error");
-            }
-        }    
+    if (numero < 1) {
+         System.out.println("Error");
+    }}    
         
     } else {
         
         int acabaAmb = lletra + numero;
         
+
+        
         for (char i = lletra; i < acabaAmb; i++) {
             
-            if (i > 'z') {
-                i = 'a';
-            } else if (i > 'Z') {
-                i = 'A';
-            }
-            
             System.out.print((char) i);
+            
+            if (i == 'Z' || i == 'z') {
+                
+                int saltsRealitzats = i - lletra;    
+                int saltsRestants = numero - saltsRealitzats;
+                
+                if (i == 'z') {
+                i = 'a';
+                acabaAmb = 'a' + (saltsRestants - 1);
+                System.out.print((char) i);
+                
+                } else if (i == 'Z') {
+                i = 'A';
+                acabaAmb = 'A' + (saltsRestants - 1);
+                System.out.print((char) i);
+                }
+            }
+
+        }
+
         }
     }    
-    }
 }
