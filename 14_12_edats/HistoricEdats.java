@@ -13,27 +13,19 @@ public class HistoricEdats {
     String nom = Entrada.readLine(); 
     
     //valida que l'entrada no estigui vuida
-    if (nom.isBlank()) {
-        System.out.println("Entrada incorrecta");
-        
-    } else {
     
     //demana edat
     System.out.println("edat?");
     int edat = Integer.parseInt(Entrada.readLine());
     
     //comprova que no sigui menor que 0
-    if (edat < 0) {
-        System.out.println("Entrada incorrecta");
-  
-    } else {
-    
+
     //demana any actual    
     System.out.println("any actual?");
     int any = Integer.parseInt(Entrada.readLine());
     
     //condició -> és menor de 1971?
-    if (any < 1971) {
+    if (nom.isBlank() || edat < 0 || any < 1971) {
         System.out.println("Entrada incorrecta");
         
     } else {
@@ -64,9 +56,6 @@ public class HistoricEdats {
     System.out.println("Adéu " + nom);
     
     }    
-     
-    }
-    }
     
     }    
 }
