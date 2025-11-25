@@ -7,15 +7,22 @@ public class QuadratNombres {
         
     
     System.out.println("Valor final?");
-    int v = Integer.parseInt(Entrada.readLine());
+    String entrada = Entrada.readLine();
     
-    for (int fila = 1; fila <= v; fila++) {
-            
-        for (int columna = 1; columna <= v; columna++) {
-        System.out.print(" " + columna);
-        }
+    if (entrada.isBlank()) {
+    System.out.println("Valor inadequat");
+    
+    } else {
+        int v = Integer.parseInt(entrada);
         
-    System.out.println();                   
+        for (int fila = 1; fila <= v; fila++) {
+                
+            for (int columna = 1; columna <= v; columna++) {
+            System.out.print(" " + columna);
+            }
+            
+        System.out.println();                   
+        }
     }       
     }
 }
