@@ -11,7 +11,7 @@ public class TriangleInvertit {
     System.out.println("Nombre?");
     int v = Integer.parseInt(Entrada.readLine());
         
-        if (v < 1) {
+        if (v < 1 || v > 9) {
         System.out.println("Valor inadequat");
         
         } else {
