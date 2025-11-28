@@ -9,7 +9,7 @@ public class Triangle {
     System.out.println("quants?");
     int v = Integer.parseInt(Entrada.readLine());
     
-    if (v > 1) {
+    if (v >= 1) {
         
         //bucle que imprimeix n triangles
         for (int i = 1; i <= v; i++) {
