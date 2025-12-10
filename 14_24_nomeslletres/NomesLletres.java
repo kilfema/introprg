@@ -11,16 +11,22 @@ public class NomesLletres {
     
     char caracter = 0;
     
+    boolean esPrimeraLletra = true;
+    
     for (int i = 0; i < text.length(); i++) {
         
         caracter = text.charAt(i);
         
         if (Character.isLetter(caracter)) {
-            System.out.print(caracter);
             
-            if (i != (text.length() - 1)) {
-                System.out.print(", ");
+            if (esPrimeraLletra) {
+                System.out.print(caracter);
+                esPrimeraLletra = false;
+                
+            } else {
+                System.out.print(", " + caracter);
             }
+            
         }       
     }
     
