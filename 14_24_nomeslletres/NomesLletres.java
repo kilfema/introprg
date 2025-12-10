@@ -18,11 +18,13 @@ public class NomesLletres {
         if (Character.isLetter(caracter)) {
             System.out.print(caracter);
             
-            if (caracter != text.length() - 1) {
+            if (i != (text.length() - 1)) {
                 System.out.print(", ");
             }
         }       
     }
+    
+    System.out.println("");
         
     }
 }
