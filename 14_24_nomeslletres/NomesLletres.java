@@ -18,7 +18,7 @@ public class NomesLletres {
         if (Character.isLetter(caracter)) {
             System.out.print(caracter);
             
-            if (i != text.length() - 1) {
+            if (caracter != text.length() - 1) {
                 System.out.print(", ");
             }
         }       
