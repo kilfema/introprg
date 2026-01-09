@@ -8,6 +8,7 @@ public class ConteDarrer {
     
     System.out.println("Introdueix texts (enter sol per finalitzar)");
     String text = Entrada.readLine();
+    text = text.toLowerCase();
     
     if (text.isEmpty()) {
         System.out.println("Adéu");
