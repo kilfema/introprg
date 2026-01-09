@@ -22,7 +22,8 @@ public class ConteDarrer {
     while (!noConte) {
         ultimCaracter = text.charAt(text.length() - 1);
         text = Entrada.readLine();
-
+        text = text.toLowerCase();
+        
         for (int i = 0; i < text.length(); i++) {
             char actual = text.charAt(i);
 
