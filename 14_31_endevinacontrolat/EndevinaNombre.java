@@ -18,6 +18,11 @@ public class EndevinaNombre {
     System.out.println("Nombre?");
     entrada = Entrada.readLine();
     
+    if (entrada.isBlank()) {
+        System.out.println("Cancel·lat!");
+        return;
+    }
+    
     //bucle per analitzar si l'entrada té lletres
     for (int i = 0; i < entrada.length(); i++) {
         char caracter = entrada.charAt(i);
