@@ -22,7 +22,7 @@ public class EndevinaNombre {
     for (int i = 0; i < entrada.length(); i++) {
         char caracter = entrada.charAt(i);
         
-        if (!Character.isDigit(caracter)) {
+        if (!Character.isDigit(caracter) && !(caracter == '-')) {
         teLletres = true;
         System.out.println("Només nombres");
         break;
