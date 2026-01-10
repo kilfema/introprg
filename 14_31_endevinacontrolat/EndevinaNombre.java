@@ -42,7 +42,7 @@ public class EndevinaNombre {
             System.out.println ("Massa gran");
             
         } else {
-            System.out.println("Has encertat!");
+            System.out.println("Encertat!");
             return;
         }
             
