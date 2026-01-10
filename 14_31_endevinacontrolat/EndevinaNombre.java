@@ -3,7 +3,7 @@
  * Demana textos per teclat fins que un d’ells no contingui el darrer caràcter del text anterior. El primer text s’accepta sempre, excepte si és buit; a partir d’aquí, cada nou text ha de contenir el caràcter final de l’anterior, i quan no es compleix aquesta condició el programa finalitza mostrant “Adéu”.
  */
  
-public class EndevinaControlat {
+public class EndevinaNombre {
     public static void main(String[] args) {
     
     int nombrePensat = Integer.parseInt(args[0]);
