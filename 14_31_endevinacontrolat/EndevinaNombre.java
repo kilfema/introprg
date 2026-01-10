@@ -32,7 +32,7 @@ public class EndevinaNombre {
     if (!teLletres) {
         nombreEntrada = Integer.parseInt(entrada);
         
-        if (nombreEntrada < 0 || nombreEntrada > 100) {
+        if (nombreEntrada < 1 || nombreEntrada > 100) {
             System.out.println("Fora de rang");
         
          } else if (nombreEntrada < nombrePensat) {
