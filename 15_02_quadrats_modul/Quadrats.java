@@ -5,10 +5,10 @@
  
 public class Quadrats {
     public static void main(String[] args) {
-        dibuixaQuadrat();    
+        dibuixaQuadrats();    
     }
     
-    public static void dibuixaQuadrat() {
+    public static void dibuixaQuadrats() {
     
     System.out.println("Quants?");
     int quadrats = Integer.parseInt(Entrada.readLine());
