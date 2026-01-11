@@ -33,7 +33,6 @@ public class LloroQuadrat {
             dibuixaLinia();
             finalitzaLinia();
         }
-        System.out.println("");
     }
     
     public static void dibuixaRectangle() {
