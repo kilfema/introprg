@@ -26,7 +26,7 @@ public class TriangleLletresInvertit {
             if (j > 0) {
                 System.out.print(", ");
             }
-            System.out.print(text.charAt(text.length() - 1 - j));
+            System.out.print(text.charAt(text.length() - j - linia));
         }
     }
 }
