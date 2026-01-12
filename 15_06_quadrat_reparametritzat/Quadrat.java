@@ -17,10 +17,16 @@ public class Quadrat {
     public static void dibuixaQuadrat(int valor, char lletra) {
         
         for (int col = 1; col <= valor; col++) {
-            for (int lin = 1; lin <= valor; lin++) {
-            System.out.print(" " + lletra);
-        }
+            dibuixaLinia(valor, lletra);
             System.out.println("");
+        }
+    }
+    
+    public static void dibuixaLinia(int valor, char lletra) {                    
+        
+        for (int lin = 1; lin <= valor; lin++) {
+            System.out.print(" " + lletra);
         }
     }    
 }
+
