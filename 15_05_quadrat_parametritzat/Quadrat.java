@@ -13,17 +13,15 @@ public class Quadrat {
     public static void dibuixaQuadrat(int valor) {
         
         for (int col = 1; col <= valor; col++) {
-            for (int lin = 1; lin <= valor; lin++) {
-            System.out.print(" X");
-        }
+            dibuixaLinia(valor);
             System.out.println("");
         }
     }
     
-    /*public static void dibuixaLinia(int valorLin) {
+    public static void dibuixaLinia(int valorLin) {
         
         for (int lin = 1; lin <= valorLin; lin++) {
             System.out.print(" X");
         }
-    }*/
+    }
 }
