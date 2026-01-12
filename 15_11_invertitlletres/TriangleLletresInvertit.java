@@ -8,7 +8,7 @@ public class TriangleLletresInvertit {
     public static void main(String[] args) {
     
     //demana text
-    System.out.println("Text");
+    System.out.println("Text?");
     String text = Entrada.readLine();
     
     dibuixaTriangleInvertit(text);
