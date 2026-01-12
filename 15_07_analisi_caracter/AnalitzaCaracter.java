@@ -11,7 +11,7 @@ public class AnalitzaCaracter {
         String text = Entrada.readLine();
         
         if (text.isEmpty()) {
-            System.out.println("Text vuit");
+            System.out.println("Text buit");
             return;
         }
         
