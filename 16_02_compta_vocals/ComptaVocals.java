@@ -8,7 +8,7 @@ public class ComptaVocals {
         System.out.println("Introdueix un text");
         String text = Entrada.readLine();
         
-        String vocals = "aàeèéiíïoòóuúü";
+        String vocals = "aàeèéiíïoóòuúü";
         
         //recorregut vocals
         for (int i = 0; i < vocals.length(); i++) {
