@@ -1,0 +1,21 @@
+Kilian Fernández - 13/01/2026
+Anàlisi de les funcions pures, funcions impures i procediments d'un codi real.
+
+
++-------+-----------------------------------------------+-----------------------------------------------+
+| Línia | Signatura                                     | Classificació / Observacions                  |
++-------+-----------------------------------------------+-----------------------------------------------+
+| 64    | public MachineTranslateTextArea()             | Procediment: no té paràmetres ni retorna res  |
+|       |                                               |                                               |
+| 91    | protected void onProjectClose()               | Procediment: retorna void                     |
+|       |                                               |                                               |
+| 108   | protected void setFoundResult(final ..., ...) | Procediment: retorna void                     |
+|       |                                               |                                               |
+| 115   | setText(getText())                            | Crida de funcions:                            |
+|       |                                               | getText() retorna un valor                    |
+|       |                                               | que es passa a setText()                      |
+|       |                                               |                                               |
+| 130   | protected MachineTranslationIndo search()     | Funció: retorna un objecte                    |
+|       |                                               | (MachineTranslationIndo)                      |
++-------+-----------------------------------------------+-----------------------------------------------+
+
