@@ -73,7 +73,7 @@ public class LloroVocalIniciFi {
         if (UtilString.esVocal(text.charAt(0))) {
             return 1;
             
-        } else if (UtilString.esVocal(textMinus.charAt(text.length() - 1))) {
+        } else if (UtilString.esVocal(text.charAt(text.length() - 1))) {
             return 1;
         
         //si primera o ultima NO son vocal, evalua els caracters restants    
