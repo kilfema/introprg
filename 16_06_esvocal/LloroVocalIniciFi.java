@@ -70,7 +70,7 @@ public class LloroVocalIniciFi {
         String textMinus = text.toLowerCase();
         
         //evalua PRIMERA i ULTIMA vocal
-        if (UtilString.esVocal(textMinus.charAt(0))) {
+        if (UtilString.esVocal(text.charAt(0))) {
             return 1;
             
         } else if (UtilString.esVocal(textMinus.charAt(text.length() - 1))) {
