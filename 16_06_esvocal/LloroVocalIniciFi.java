@@ -3,7 +3,7 @@
  * Programa que rep un text i el repeteix si té vocal. Si no en té, pregunta a l'usuari si vol continuar amb el programa.
  */
  
-public class EsVocal {
+public class LloroVocalIniciFi {
     public static void main(String[] args) {
     
     int comptador = 1;   
