@@ -24,7 +24,7 @@ public class LloroVocalIniciFi {
 
         //lloro
         if (textValid) {
-        System.out.println(" " + comptador + ": \"" + text + "\"");
+        System.out.println("  " + comptador + ": \"" + text + "\"");
         comptador++;
         }
     }
