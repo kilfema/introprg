@@ -1,0 +1,58 @@
+
+
+Kilian Fernández - 14/1/2026
+
+
+TIPUS DE VARIABLES 
+
+
+
+    Quin tipus de dades guardarà?
+
+    És un paràmetre?
+
+    És una constant?
+
+    Respecta la convenció camelCase?
+
+    Indica un mòdul pel que aquesta variable sigui global
+
+    Indica un mòdul pel que aquesta variable sigui local
+
+    Indica un mòdul pel que aquesta variable sigui inaccessible
+
+
+
+
+    - externalLinked a la línia 366
+      
+        Quin tipus de dades guardarà?
+        
+
+        És un paràmetre?
+
+        És una constant?
+
+        Respecta la convenció camelCase?
+
+        Indica un mòdul pel que aquesta variable sigui global
+
+        Indica un mòdul pel que aquesta variable sigui local
+
+        Indica un mòdul pel que aquesta variable sigui inaccessible
+        
+    id a la línia 330
+
+    levelTwo a la línia 162
+
+    PROP_FILE a la línia 61
+
+    segmentSource a la línia 317
+
+    sourceLang a la línia 278
+
+    translationUpdatedByUser a la línia 127
+
+
+
+
