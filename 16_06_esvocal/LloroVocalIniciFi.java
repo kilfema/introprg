@@ -17,14 +17,16 @@ public class LloroVocalIniciFi {
 
         boolean confirmarSortida = false;        
         if (!textValid) {
-            confirmarSortida();
-            
-            if (confirmarSortida) return;            
+            confirmarSortida = confirmarSortida();          
         }
+        
+        if (confirmarSortida) return; 
 
         //lloro
+        if (textValid) {
         System.out.println(comptador + ": \"" + text + "\"");
         comptador++;
+        }
     }
     }
     
@@ -32,16 +34,15 @@ public class LloroVocalIniciFi {
     /*Modul de confirmació de sortida. quan s'activa, pregunta a l'usuari si vol sortir i crida a    
     **UtilitatsConfirmació per valorar si la resposta és afirmativa. */
     
-            System.out.println("Sortir?");
-            String respostaSortir = Entrada.readLine();
-            boolean volSortir = UtilitatsConfirmacio.respostaABoolean(respostaSortir);
+        System.out.println("Sortir?");
+        String respostaSortir = Entrada.readLine();
+        boolean volSortir = UtilitatsConfirmacio.respostaABoolean(respostaSortir);
                 
-            if (volSortir) {
-                System.out.println("Adéu");
-                return true;
-            }
-                     
-    return false;
+        if (volSortir) {
+            System.out.println("Adéu");
+            return true;
+        }            
+        return false;
     }
     
     
