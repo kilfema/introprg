@@ -67,7 +67,7 @@ public class LloroVocalIniciFi {
             return 0;
         }
         
-        String textMinus = text.toLowerCase();
+        //String textMinus = text.toLowerCase();
         
         //evalua PRIMERA i ULTIMA vocal
         if (UtilString.esVocal(text.charAt(0))) {
@@ -79,8 +79,8 @@ public class LloroVocalIniciFi {
         //si primera o ultima NO son vocal, evalua els caracters restants    
         } else {
             
-            for (int i = 1; i < (textMinus.length() - 1); i++) {
-                char caracterText = textMinus.charAt(i);
+            for (int i = 1; i < (text.length() - 1); i++) {
+                char caracterText = text.charAt(i);
 
                 if (UtilString.esVocal(caracterText)) return 2; 
             }
