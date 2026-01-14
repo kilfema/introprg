@@ -1,0 +1,68 @@
+/*
+ *Kilian Fernández - 12/01/2026
+ * Modul que rep un text i retorna un boolea confirmant si conté vocal
+ */
+ 
+public class UtilString {
+   
+   /*
+   
+   * Funció que rep un caràcter i retorna un booleà indicant si és vocal
+   
+   */
+    public static boolean esVocal(char caracter) {
+        
+        String vocals = "aàeèéiíïoóòuúü";
+        
+            for (int j = 0; j < vocals.length(); j++) {
+                if (caracter == vocals.charAt(j)) {
+                    return true;
+                }
+            }
+     return false;   
+    }
+    
+   /*
+  
+   * Funció que rep un string amb un text i retorna el mateix text només amb lletres.
+   * NO manté espais blancs, dígits, símbols...
+   
+   */
+   
+    public static String nomesLletres(String text) {
+    
+    String resultat = "";
+    
+    for (int i = 0; i < text.length(); i++) {
+        char caracter = text.charAt(i);
+        
+        if (Character.isLetter(caracter)) {
+            resultat+= caracter;
+        }
+    }
+    
+    return resultat;    
+    }
+    
+   /*
+  
+   * Funció que rep un string amb un text i retorna el mateix text separant cada caràcter amb comes.
+   
+   */
+   
+    public static String lletresSeparades(String text) {
+   
+    String resultat = "";
+    
+    for (int i = 0; i < text.length(); i++) {
+        
+        if (i > 0) {
+            resultat+= ", ";
+        }
+        
+        resultat += text.charAt(i);
+    }   
+   
+    return resultat; 
+    } 
+}
