@@ -6,7 +6,8 @@
 public class LloroVocalIniciFi {
     public static void main(String[] args) {
     
-    int comptador = 1;   
+    int comptador = 1;
+    boolean esVocal = false;   
     while (true) {
 
         System.out.println("Text?");
@@ -14,7 +15,13 @@ public class LloroVocalIniciFi {
         
         String textMinus = text.toLowerCase();
         
-        boolean esVocal = UtilString.esVocal(textMinus);
+        for (int i = 0; i < textMinus.length(); i++) {
+            char caracterText = text.charAt(i);
+            esVocal = UtilString.esVocal(caracterText);
+            
+            if (esVocal) break;
+            
+        }    
         
             //si no és vocal, pregunta si vols sortir i crida al mètode de confirmació per decidir 
             //si tanca el programa o torna a demanar text
