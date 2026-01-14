@@ -19,7 +19,7 @@ public class ComptaVocals {
     int comptador = 0;
        
     for (int i = 0; i < text.length(); i++) {
-        char caracter = text.charAt(i);
+        char caracter = Character.toLowerCase(text.charAt(i));
         
         if (UtilString.esVocal(caracter)) comptador++;
     }
