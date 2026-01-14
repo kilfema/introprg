@@ -6,6 +6,14 @@
 public class LloroVocalIniciFi {
     public static void main(String[] args) {
     
+    //Aquest programa té tres sortides diferents depenent de l'entrada donada. per evitar que 
+    //una funció retorni més d'un valor, he creat una variable integer anomenada textValid amb 3 
+    //opcions que generaràn diferents sortides del programa. 
+    //
+    // 1. el programa NO conté vocal --> retorna textValid = 0
+    // 2. el text comença o acaba amb vocal --> retorna textValid = 1
+    // 3. el text conté vocal però NO a l'inici o fi --> retorna textValid = 2
+    
     int comptador = 1;
     int textValid = 0;
        
@@ -14,7 +22,8 @@ public class LloroVocalIniciFi {
         System.out.println("Text?");
         String text = Entrada.readLine();
         textValid = analisisText(text);
-
+        
+        //retorna 0; crida funcio de confirmar sortida del programa
         boolean confirmarSortida = false;        
         if (textValid == 0) {
             confirmarSortida = confirmarSortida();          
@@ -22,7 +31,7 @@ public class LloroVocalIniciFi {
         
         if (confirmarSortida) return; 
 
-        //lloro
+        //retorna 1, lloro repeteix 
         if (textValid == 1) {
         System.out.println("  " + comptador + ": \"" + text + "\"");
         comptador++;
@@ -49,29 +58,31 @@ public class LloroVocalIniciFi {
     /* Funcio que rep el text, valida si està vuit, i en cas contrari, crida a esVocal per
     ** confirmar si té vocals. Retorna int: 0, 1 o 2. */
     public static int analisisText(String text) {
-        
-        boolean esVocal = false;
          
         if (text.isEmpty()) {
             return 0;
         }
         
         String textMinus = text.toLowerCase();
-        for (int i = 0; i < textMinus.length(); i++) {
-            char caracterText = textMinus.charAt(i);
-            
-            //Crida a la funicó que valida si és vocal. Retorna boolèa
-            esVocal = UtilString.esVocal(caracterText);
- 
-            if (esVocal) {
-                
-                if (caracterText == 0 || caracterText == text.length() - 1) {
-                    return 1;
-                    
-                } else return 2;
-            }   
-        }
         
-    return 0;
+        //evalua PRIMERA i ULTIMA vocal
+        if (UtilString.esVocal(text.charAt(0))) {
+            return 1;
+            
+        } else if (UtilString.esVocal(text.charAt(text.length() - 1))) {
+            return 1;
+        
+        //si primera o ultima NO son vocal, evalua els caracters restants    
+        } else {
+            
+            for (int i = 1; i < (textMinus.length() - 1); i++) {
+                char caracterText = textMinus.charAt(i);
+
+                if (UtilString.esVocal(caracterText)) return 2; 
+            }
+         
+         //si cap és vocal, retorna 0           
+        return 0;
+    }
     } 
 }
