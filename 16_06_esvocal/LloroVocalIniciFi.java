@@ -7,7 +7,7 @@ public class LloroVocalIniciFi {
     public static void main(String[] args) {
     
     int comptador = 1;
-    boolean textValid = false;
+    int textValid = 0;
        
     while (true) {
 
@@ -16,14 +16,14 @@ public class LloroVocalIniciFi {
         textValid = analisisText(text);
 
         boolean confirmarSortida = false;        
-        if (!textValid) {
+        if (textValid == 0) {
             confirmarSortida = confirmarSortida();          
         }
         
         if (confirmarSortida) return; 
 
         //lloro
-        if (textValid) {
+        if (textValid == 1) {
         System.out.println("  " + comptador + ": \"" + text + "\"");
         comptador++;
         }
@@ -47,22 +47,31 @@ public class LloroVocalIniciFi {
     
     
     /* Funcio que rep el text, valida si està vuit, i en cas contrari, crida a esVocal per
-    ** confirmar si té vocals. Retorna booleà */
-    public static boolean analisisText(String text) {
+    ** confirmar si té vocals. Retorna int: 0, 1 o 2. */
+    public static int analisisText(String text) {
+        
         boolean esVocal = false;
          
         if (text.isEmpty()) {
-            return false;
+            return 0;
         }
         
         String textMinus = text.toLowerCase();
         for (int i = 0; i < textMinus.length(); i++) {
             char caracterText = textMinus.charAt(i);
+            
+            //Crida a la funicó que valida si és vocal. Retorna boolèa
             esVocal = UtilString.esVocal(caracterText);
  
-            if (esVocal) return true;   
+            if (esVocal) {
+                
+                if (caracterText == 0 || caracterText == text.length() - 1) {
+                    return 1;
+                    
+                } else return 2;
+            }   
         }
         
-    return false;
+    return 0;
     } 
 }
