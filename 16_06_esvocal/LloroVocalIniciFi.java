@@ -7,11 +7,16 @@ public class LloroVocalIniciFi {
     public static void main(String[] args) {
     
     int comptador = 1;
-    boolean esVocal = false;   
+    boolean esVocal = false;
+       
     while (true) {
 
         System.out.println("Text?");
         String text = Entrada.readLine();
+        
+        if (text.isEmpty()) {
+            confirmarSortida();
+        }
         
         String textMinus = text.toLowerCase();
         
@@ -19,29 +24,34 @@ public class LloroVocalIniciFi {
             char caracterText = text.charAt(i);
             esVocal = UtilString.esVocal(caracterText);
             
-            if (esVocal) break;
-            
+            if (esVocal) break;   
         }    
+
+        if (!esVocal) {
+            confirmarSortida();
+        }
         
-            //si no és vocal, pregunta si vols sortir i crida al mètode de confirmació per decidir 
-            //si tanca el programa o torna a demanar text
-            String respostaSortir = "";
-            boolean volSortir = false;  
-            
-            if (!esVocal) {
-                System.out.println("Sortir?");
-                respostaSortir = Entrada.readLine();
-                volSortir = UtilitatsConfirmacio.respostaABoolean(respostaSortir);
-                
-                if (volSortir) {
-                    System.out.println("Adéu");
-                    return;
-                }            
-            }
+        
+        boolean confirmarSortida = false;
+        if (confirmarSortida) return;
         
         //lloro
         System.out.println(comptador + ": \"" + text + "\"");
         comptador++;
     }
+    }
+    
+    public static boolean confirmarSortida() { //modul de confirmació de sortida. quan s'activa, pregunta a l'usuari si vol sortir i crida a UtilitatsConfirmació per valorar si la resposta és afirmativa.
+    
+            System.out.println("Sortir?");
+            String respostaSortir = Entrada.readLine();
+            boolean volSortir = UtilitatsConfirmacio.respostaABoolean(respostaSortir);
+                
+            if (volSortir) {
+                System.out.println("Adéu");
+                return true;
+            }
+                     
+    return false;
     }
 }
