@@ -33,7 +33,11 @@ public class LloroVocalIniciFi {
 
         //retorna 1, lloro repeteix 
         if (textValid == 1) {
-        System.out.println("  " + comptador + ": \"" + text + "\"");
+            if (comptador < 10) {
+                System.out.print(" ");
+            }
+            
+        System.out.println(" " + comptador + ": \"" + text + "\"");
         comptador++;
         }
     }
