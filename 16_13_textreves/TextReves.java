@@ -7,8 +7,8 @@ public class TextReves {
     public static void main(String[] args) {
     
     System.out.println("Text?");
-    System.out.println(UtilString.inverteix(
-                            UtilString.cometeja(
+    System.out.println(UtilString.cometeja(
+                            UtilString.inverteix(
                                 Entrada.readLine()
                             )
                         )    
