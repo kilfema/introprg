@@ -8,9 +8,7 @@
     
     System.out.println("Text?");
     String text = Entrada.readLine();
-    
-    System.out.println("Index?");
-    int index = Integer.parseInt(Entrada.readLine());
+    int index = Integer.parseInt(args[0]);
     
     System.out.println(
                         codifica(text, index)
