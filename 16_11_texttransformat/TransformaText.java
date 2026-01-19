@@ -45,17 +45,19 @@ public class TransformaText {
         if (Character.isDigit(caracter)) {
             
             if (i == 0) {
-               resultat += "(" + caracter; 
+               resultat += "("; 
                
             } else if (!Character.isDigit(text.charAt(i-1))) {
-                resultat += "(" + caracter; 
+                resultat += "("; 
             }
+        
+            resultat += caracter;    
             
             if (i == text.length() - 1) {
-                resultat += caracter + ")";
+                resultat += ")";
                 
             } else if (!Character.isDigit(text.charAt(i+1))) {
-                resultat += caracter + ")";
+                resultat += ")";
             }
         }
     }
