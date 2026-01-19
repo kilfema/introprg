@@ -12,14 +12,14 @@ public class ComptaVocals {
         numVocalsMinuscules(
             Entrada.readLine()
         )
-    ); 
+    );   
     }
     
     public static int numVocalsMinuscules(String text) {
     int comptador = 0;
        
     for (int i = 0; i < text.length(); i++) {
-        char caracter = Character.toLowerCase(text.charAt(i));
+        char caracter = text.charAt(i);
         
         if (UtilString.esVocal(caracter)) comptador++;
     }
