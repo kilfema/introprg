@@ -13,7 +13,7 @@ public class TextReves {
     
     System.out.println(UtilString.cometeja(
                             UtilString.inverteix(
-                                UtilString.treureEspaisInicialsFinals(text)
+                                Entrada.readLine()
                             )
                         )    
                       );
