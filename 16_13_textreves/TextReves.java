@@ -9,9 +9,13 @@ public class TextReves {
     System.out.println("Text?");
     System.out.println(UtilString.cometeja(
                             UtilString.inverteix(
-                                Entrada.readLine()
+                                UtilString.treureEspaisInicialsFinals(
+                                                        Entrada.readLine()
+                                )
                             )
                         )    
                       );
+                      /*
+    System.out.println(UtilString.treureEspaisInicialsFinals(Entrada.readLine()));*/
     }
 }

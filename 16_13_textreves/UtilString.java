@@ -126,10 +126,75 @@ public class UtilString {
     }   
     
     
+   /* 
+   
+   * Funció que rep un string amb un text i retorna el mateix text només amb lletres.
+   
+   * NO manté espais blancs, dígits, símbols...
+   
+   */
+
+   
+    public static String treureEspaisInicialsFinals(String text) {
     
+    String resultat = "";
+    int primerCaracter = primerCaracterValid(text);
+    int ultimCaracter = ultimCaracterValid(text);
     
+    for (int i = primerCaracter; i <= ultimCaracter; i++) {
+        char caracter = text.charAt(i);
+        
+        resultat += caracter;   
+    }
     
+    return resultat;    
+    }
+
+   /* 
+   
+   * Funció que rep un string amb un text i retorna a quina posició char es troba el primer caràcter
+   
+   * que NO és espai blanc. El programa no està pensat per rebre strings vuits.
+   
+   */
+       
+    public static int primerCaracterValid (String text) {
     
+    int caracterValid = 0;
+        
+    for (int i = 0; i < text.length(); i++) {
+        char caracter = text.charAt(i);
+        
+        if (!Character.isWhitespace(caracter)) {
+            caracterValid = i;
+            break;
+        }
+    }
+    return caracterValid;   
+    }
+    
+   /* 
+   
+   * Funció que rep un string amb un text i retorna a quina posició char es troba l'últim caràcter
+   
+   * que NO és espai blanc. El programa no està pensat per rebre strings vuits.
+   
+   */
+   
+    public static int ultimCaracterValid (String text) {
+    
+    int caracterValid = 0;
+        
+    for (int i = text.length() - 1; i >= 0; i--) {
+        char caracter = text.charAt(i);
+        
+        if (!Character.isWhitespace(caracter)) {
+            caracterValid = i;
+            break;
+        }
+    }
+    return caracterValid;   
+    }
     
     
     
