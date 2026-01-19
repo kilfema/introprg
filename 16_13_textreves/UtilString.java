@@ -104,8 +104,19 @@ public class UtilString {
         return resultat;    
     }
     
+   /* 
+   
+   * Funció que rep un string amb un text i retorna el string separant cada caracter amb comes.
+   
+   * Primer, elimina els possibles espais blancs a l'inici o final del text cridant a una altra
+   
+   * funció anomenada treureEspaisInicialsFinals
+   
+   */
     
     public static String cometeja(String text) {
+    
+    text  = cometeja(text);
     
     String resultat = "";
     
