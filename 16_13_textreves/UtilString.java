@@ -113,9 +113,14 @@ public class UtilString {
        
         char caracter = text.charAt(i);
         
-        if (Character.isWhitespace(caracter)) continue;
+        if (Character.isWhitespace(caracter)) {
+            resultat += caracter;
+            continue;
+        }
         
-        if (i > 0 && !(Character.isWhitespace(text.charAt(i - 1)))) resultat += ", ";
+        if (i > 0 && !(Character.isWhitespace(text.charAt(i - 1)))) {
+            resultat += ", ";
+        }
         
         resultat += caracter;
     }
