@@ -115,7 +115,7 @@ public class UtilString {
         
         if (Character.isWhitespace(caracter)) continue;
         
-        if (i > 0) resultat += ", ";
+        if (i > 0) resultat += " ,";
         
         resultat += caracter;
     }
