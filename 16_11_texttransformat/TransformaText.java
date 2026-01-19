@@ -23,7 +23,10 @@ public class TransformaText {
     for (int i = 0; i < text.length(); i++) {
     
         char caracter = text.charAt(i);         
+        boolean esDigit = Character.isDigit(caracter);
+        boolean iniciaNombres;
         
+
         if (Character.isWhitespace(caracter)) {
             resultat += caracter;
             continue;
@@ -41,11 +44,17 @@ public class TransformaText {
         
         if (Character.isDigit(caracter)) {
             
-            if (!Character.isDigit(text.charAt(i-1))) {
+            if (i == 0) {
+               resultat += "(" + caracter; 
+               
+            } else if (!Character.isDigit(text.charAt(i-1))) {
                 resultat += "(" + caracter; 
             }
             
-            if (!Character.isDigit(text.charAt(i+1))) {
+            if (i == text.length() - 1) {
+                resultat += caracter + ")";
+                
+            } else if (!Character.isDigit(text.charAt(i+1))) {
                 resultat += caracter + ")";
             }
         }
