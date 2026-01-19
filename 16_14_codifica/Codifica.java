@@ -17,7 +17,7 @@
     
     public static String codifica (String text, int index) {
     
-    if (index == 0) return text;
+    if (index <= 0) return text;
     
     String resultat = "";
     String majus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
