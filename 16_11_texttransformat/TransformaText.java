@@ -23,36 +23,44 @@ public class TransformaText {
     for (int i = 0; i < text.length(); i++) {
     
         char caracter = text.charAt(i);         
-        boolean esDigit = Character.isDigit(caracter);
-        boolean iniciaNombres;
         
-
+        //Casos
+        // ESPACIOS BLANCOS
         if (Character.isWhitespace(caracter)) {
             resultat += caracter;
             continue;
         }
         
+        //VOCALES
         if (UtilString.esVocal(caracter)) {
             resultat+= caracter;
             continue;
         }
         
+        
+        //CONSONANTES
         if (UtilString.esConsonant(caracter)) {
             resultat += Character.toUpperCase(caracter);
             continue;
         }
-        
+       
+       //DIGITOS 
         if (Character.isDigit(caracter)) {
             
+            //Añadir "(". Valora si es el primer caracter, o si el caracter anterior no es digito
+            //Se ha hecho con estos dos condicionales para evitar errores OutOfBondex
             if (i == 0) {
                resultat += "("; 
                
             } else if (!Character.isDigit(text.charAt(i-1))) {
                 resultat += "("; 
             }
-        
+            
+            //concatena caracter
             resultat += caracter;    
             
+            
+            //Añadir ")". Valora si es el último caracter o si el caracter posterior no es digito.
             if (i == text.length() - 1) {
                 resultat += ")";
                 
