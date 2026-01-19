@@ -7,11 +7,10 @@ public class ComptaVocals {
     public static void main(String[] args) {
         
     System.out.println("Text?");
+    String text = Entrada.readLine();
     
     System.out.println(
-        numVocalsMinuscules(
-            Entrada.readLine()
-        )
+        numVocalsMinuscules(text.toLowerCase())
     );   
     }
     
