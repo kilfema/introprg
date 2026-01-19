@@ -116,7 +116,7 @@ public class UtilString {
     
     public static String cometeja(String text) {
     
-    text  = cometeja(text);
+    text  = treureEspaisInicialsFinals(text);
     
     String resultat = "";
     
