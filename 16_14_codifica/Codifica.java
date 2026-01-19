@@ -28,7 +28,7 @@
     
         char caracter = text.charAt(i);
         
-        if (Character.isLetter(caracter)) {
+        if (Character.isLetter(caracter) && !(esCaracterEspecial(caracter))) {
             
             //CAS CARACTER LLETRA MAJUSCULA
             if (Character.isUpperCase(caracter)) {
@@ -81,6 +81,24 @@
     }
     
     return resultat;
+    }
+    
+    /* He creat una funció que retorna un booleà per analitzar si una lletra és un caràcter especial
+    *  Ja que en aquest programa les lletres especials no es modifiquen ni canvien, sino que es
+    *  es conserven tal i com apareixen en el string d'entrada.
+    */
+    
+    public static boolean esCaracterEspecial(char caracter) {
+    
+    caracter = Character.toLowerCase(caracter);
+    
+    String especials = "àáèéëìíïòóöùúüçñ";
+    
+        for (int i = 0; i < especials.length(); i++) {
+            if (especials.charAt(i) == caracter) return true;
+        }
+    
+    return false;
     }
  }
  
