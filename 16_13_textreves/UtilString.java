@@ -116,6 +116,8 @@ public class UtilString {
     
     public static String cometeja(String text) {
     
+    if (text.isEmpty()) return text;
+    
     text  = treureEspaisInicialsFinals(text);
     
     String resultat = "";
