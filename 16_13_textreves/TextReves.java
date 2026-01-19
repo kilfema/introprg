@@ -7,15 +7,16 @@ public class TextReves {
     public static void main(String[] args) {
     
     System.out.println("Text?");
+    String text = Entrada.readLine();
+    
+    if (text.isEmpty()) return;
+    
     System.out.println(UtilString.cometeja(
                             UtilString.inverteix(
-                                UtilString.treureEspaisInicialsFinals(
-                                                        Entrada.readLine()
-                                )
+                                UtilString.treureEspaisInicialsFinals(text)
                             )
                         )    
                       );
-                      /*
-    System.out.println(UtilString.treureEspaisInicialsFinals(Entrada.readLine()));*/
+
     }
 }
