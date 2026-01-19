@@ -4,7 +4,7 @@
  * entre parèntesi i treient la resta de caràcters que no són espais
  */
  
-public class ComptaVocals {
+public class TransformaText {
     public static void main(String[] args) {
         
     System.out.println("Text?");    
@@ -15,15 +15,40 @@ public class ComptaVocals {
     );   
     }
     
-    public class String transformaText(String text) {
+    public static String transformaText(String text) {
     
     String resultat = "";
     text = text.toLowerCase();
     
     for (int i = 0; i < text.length(); i++) {
-        char caracter = text.charAt(i); 
+    
+        char caracter = text.charAt(i);         
         
-        if ()
+        if (Character.isWhitespace(caracter)) {
+            resultat += caracter;
+            continue;
+        }
+        
+        if (UtilString.esVocal(caracter)) {
+            resultat+= caracter;
+            continue;
+        }
+        
+        if (UtilString.esConsonant(caracter)) {
+            resultat += Character.toUpperCase(caracter);
+            continue;
+        }
+        
+        if (Character.isDigit(caracter)) {
+            
+            if (!Character.isDigit(text.charAt(i-1))) {
+                resultat += "(" + caracter; 
+            }
+            
+            if (!Character.isDigit(text.charAt(i+1))) {
+                resultat += caracter + ")";
+            }
+        }
     }
     
     return resultat;

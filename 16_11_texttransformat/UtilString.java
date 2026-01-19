@@ -64,5 +64,23 @@ public class UtilString {
     }   
    
     return resultat; 
+    }
+    
+   /*
+   
+   * Funció que rep un caràcter i retorna un booleà indicant si és consonant minuscula
+   
+   */
+    
+    public static boolean esConsonant(char caracter) {
+        
+        String consonants = "bcdfghjklmnpqrstvwxyzñç";
+        
+            for (int j = 0; j < consonants.length(); j++) {
+                if (caracter == consonants.charAt(j)) {
+                    return true;
+                }
+            }
+     return false;   
     } 
 }
