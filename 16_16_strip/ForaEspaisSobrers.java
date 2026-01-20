@@ -3,7 +3,7 @@
  * Programa que demana un text i el retorna repetint-lo normalitzat; sense caracters especials.
  */
  
-public class LloroNormalitzador {
+public class ForaEspaisSobrers {
     public static void main(String[] args) {
         
     while (true) {
