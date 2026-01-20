@@ -307,13 +307,14 @@ public class UtilString {
         for (int i=0; i<text.length(); i++) {
             
             char caracter = text.charAt(i);
-            
-            if (Character.isWhitespace(caracter)) {
+           // int tab = (int)caracter;
+           // System.out.println("QUe es?"+tab);
+            if (Character.isWhitespace(caracter)/* || (int)caracter == 9*/) {
 
                 if (!teEspaiAnterior) {
                 
                     teEspaiAnterior = true;
-                    resultat += caracter;
+                    resultat += ' ';
                     
                 } else continue;
                 
