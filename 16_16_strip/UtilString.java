@@ -297,12 +297,13 @@ public class UtilString {
       
     public static String normalitzaBlancs(String text) {
                 
-        text = treureEspaisInicialsFinals(text);
-        String resultat="";        
-        boolean teEspaiAnterior = false;
         
+        String resultat="";               
         if (text.isEmpty()) return resultat;
         
+        text = treureEspaisInicialsFinals(text);
+        boolean teEspaiAnterior = false;
+                
         for (int i=0; i<text.length(); i++) {
             
             char caracter = text.charAt(i);
