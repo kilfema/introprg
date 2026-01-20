@@ -340,8 +340,7 @@ public class UtilString {
   
     public static boolean esEnter(String text) {
         
-        if (text.length() > 9) return false;
-        
+
         //normalitza text si té espais blancs a l'inici o al final
         if (Character.isWhitespace(text.charAt(0)) || 
             Character.isWhitespace(text.charAt(text.length()-1))) {
@@ -366,10 +365,64 @@ public class UtilString {
             }
         }    
         
+        if (validaLongitudEnter(text)) {
+                
+            return true;
         
-        
-    return true;
-    }
-}   
+        } else return false;
+    }   
     
+
+    public static boolean validaLongitudEnter(String text) {
+        
+        boolean iniciaAmbCero = false;
+        
+        for (int i=0; i<text.length(); i++) {
+            
+            int caracter = Integer.parseInt(text.charAt(i));
+            
+            //si comença amb + o -, salta  a la següent iteració  
+            if (i == 0 && (caracter == '+' || caracter == '-')) continue;
+            
+            // Si NO comença amb cero i el caràcter es major que 0, retorna true
+            if (!(iniciaAmbCero) && caracter > 0) {               
+                System.out.println("no inicia con cero");
+                return true;
+            }
+            // si l'anterior if no s'ha validat, comproba si comença amb cero i activa booleà
+            // d'inici amb cero
+            if (!(iniciaAmbCero) && caracter == 0) {
+                iniciaAmbCero=true;
+                System.out.println("inicia con cero");
+            }
+            // si inicia amb cero, busca si el següent caracter és cero o més gran
+            if (iniciaAmbCero) {
+                
+                if (text.charAt(i+1) > 0) { //seguent caracter és MÉS gran que 0?
+                    
+                    // calcula diferencia entre l'ultim caracter i el primer caràcter major que
+                    // cero. El resultat és la longitud del int sense ceros inicials. Si és major
+                    // que 9, retorna enter no vàlid
+                    System.out.println("caracter no cero es: " + i+1 + "\n" + ((text.length() -1) - (i + 1)));
+                    if (((text.length() -1) - (i + 1)) > 9) { 
+                        System.out.println("Length mayor que 9");
+                        return false;
+                        
+                    } else return true;
+                    }
+            }
+        }
+        
+        return false;
+    }
+}
+
+
+
+
+
+
+
+
+
 
