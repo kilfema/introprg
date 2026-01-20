@@ -340,7 +340,7 @@ public class UtilString {
   
     public static boolean esEnter(String text) {
         
-        if (text.length() > 8) return false;
+        if (text.length() > 9) return false;
         
         //normalitza text si té espais blancs a l'inici o al final
         if (Character.isWhitespace(text.charAt(0)) || 
