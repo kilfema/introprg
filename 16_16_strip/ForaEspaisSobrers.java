@@ -15,39 +15,9 @@ public class ForaEspaisSobrers {
         System.out.println("El lloro s'acomiada atentament");
         return;
     }    
-    System.out.println("El lloro respon: " + normalitzaBlancs(text));  
+    System.out.println("El lloro respon: " + UtilString.normalitzaBlancs(text));  
     }                
     }
-    
-    public static String normalitzaBlancs(String text) {
-        
-        text = UtilString.treureEspaisInicialsFinals(text);
-        String resultat="";
-        
-        boolean teEspaiAnterior = false;
-        
-        for (int i=0; i<text.length(); i++) {
-            
-            char caracter = text.charAt(i);
-            
-            if (Character.isWhitespace(caracter)) {
-
-                if (!teEspaiAnterior) {
-                
-                    teEspaiAnterior = true;
-                    resultat += caracter;
-                    
-                } else continue;
-                
-            } else {
-            
-                resultat += caracter;
-                if (teEspaiAnterior) teEspaiAnterior = false;
-            }
-        }
-        
-        return resultat;   
-    }
-}
+} 
     
     

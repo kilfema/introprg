@@ -286,18 +286,44 @@ public class UtilString {
         
         return normalitzat;    
     }
+
+   /* 
+   
+   * Funció que rep un string i el retorna sense espais extres a l'inici i al final cridant a la
+   
+   *funció treureESpaisInicialsFinals. I també elimina els espais extra entre paraules.
+   
+   */
+      
+    public static String normalitzaBlancs(String text) {
+        
+        text = treureEspaisInicialsFinals(text);
+        String resultat="";
+        
+        boolean teEspaiAnterior = false;
+        
+        for (int i=0; i<text.length(); i++) {
+            
+            char caracter = text.charAt(i);
+            
+            if (Character.isWhitespace(caracter)) {
+
+                if (!teEspaiAnterior) {
+                
+                    teEspaiAnterior = true;
+                    resultat += caracter;
+                    
+                } else continue;
+                
+            } else {
+            
+                resultat += caracter;
+                if (teEspaiAnterior) teEspaiAnterior = false;
+            }
+        }
+        
+        return resultat;   
+    }
+}   
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     
-}
+
