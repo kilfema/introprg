@@ -299,7 +299,7 @@ public class UtilString {
                 
         
         String resultat="";               
-        if (text.isBlank()) return resultat;
+        if (text.isBlank() || text.isEmpty()) return resultat;
         
         text = treureEspaisInicialsFinals(text);
         boolean teEspaiAnterior = false;
