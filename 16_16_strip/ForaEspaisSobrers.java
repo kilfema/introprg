@@ -15,7 +15,7 @@ public class ForaEspaisSobrers {
         System.out.println("El lloro s'acomiada atentament");
         return;
     }    
-    System.out.println("El lloro respon: " + UtilString.normalitzaBlancs(text));  
+    System.out.println("El lloro respon \"" + UtilString.normalitzaBlancs(text) + "\"");  
     }                
     }
 } 
