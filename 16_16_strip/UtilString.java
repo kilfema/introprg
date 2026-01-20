@@ -296,12 +296,12 @@ public class UtilString {
    */
       
     public static String normalitzaBlancs(String text) {
-        
-        if (text.isEmpty()) return text;
-        
+                
         text = treureEspaisInicialsFinals(text);
         String resultat="";        
         boolean teEspaiAnterior = false;
+        
+        if (text.isEmpty()) return resultat;
         
         for (int i=0; i<text.length(); i++) {
             
