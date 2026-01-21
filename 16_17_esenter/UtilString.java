@@ -4,7 +4,9 @@
  */
  
 public class UtilString {
-   
+     public static void main(String[] args) {
+        
+     }
    /*
    
    * Funció que rep un caràcter i retorna un booleà indicant si és vocal
@@ -341,11 +343,11 @@ public class UtilString {
     public static boolean esEnter(String text) {
         
         //normalitza text si té espais blancs a l'inici o al final
-        if (Character.isWhitespace(text.charAt(0)) || 
+        /*if (Character.isWhitespace(text.charAt(0)) || 
             Character.isWhitespace(text.charAt(text.length()-1))) {
                 
-                //text = treureEspaisInicialsFinals(text);
-            }
+                text = treureEspaisInicialsFinals(text);
+            }*/
            
         for (int i=0; i<text.length(); i++) {
             
