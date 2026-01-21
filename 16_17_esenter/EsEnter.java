@@ -12,10 +12,17 @@ public class EsEnter{
             
             String text = Entrada.readLine();
             
+            
             if (text.isEmpty()) {
                 System.out.println("Adéu");
                 return;
             }
+            
+            if (Character.isWhitespace(text.charAt(0)) || 
+            Character.isWhitespace(text.charAt(text.length()-1))) {
+                
+                text = UtilString.treureEspaisInicialsFinals(text);
+            }            
             
             if (UtilString.esEnter(text)) {
                 System.out.println("\"" + text + "\" és enter");
