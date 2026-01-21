@@ -332,22 +332,15 @@ public class UtilString {
    
    * Funció que rep un string i comproba si és enter. Només el retornarà com a valid si
    
-   * tots els caràcters son digits, i també, si el primer caràcter és '+' o '-'. També accepta 
-   
-   * espais blancs a l'inici o al final (normalitza cridant a treureEspaisInicialsFinals)
+   * tots els caràcters son digits, i també, si el primer caràcter és '+' o '-'.
    
    */
   
     public static boolean esEnter(String text) {
         
 
-        //normalitza text si té espais blancs a l'inici o al final
-        if (Character.isWhitespace(text.charAt(0)) || 
-            Character.isWhitespace(text.charAt(text.length()-1))) {
-                
-                text = treureEspaisInicialsFinals(text);
-            }
-           
+        if (text.isEmpty()) return false;
+
         for (int i=0; i<text.length(); i++) {
             
             char caracter = text.charAt(i);
@@ -379,7 +372,7 @@ public class UtilString {
         
         for (int i=0; i<text.length(); i++) {
             
-            int caracter = Integer.parseInt(text.charAt(i));
+            int caracter = text.charAt(i);
             
             //si comença amb + o -, salta  a la següent iteració  
             if (i == 0 && (caracter == '+' || caracter == '-')) continue;
