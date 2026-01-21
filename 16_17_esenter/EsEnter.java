@@ -18,6 +18,8 @@ public class EsEnter{
                 return;
             }
             
+            String textPrint = text;
+            
             if (Character.isWhitespace(text.charAt(0)) || 
             Character.isWhitespace(text.charAt(text.length()-1))) {
                 
@@ -25,10 +27,10 @@ public class EsEnter{
             }            
             
             if (UtilString.esEnter(text)) {
-                System.out.println("\"" + text + "\" és enter");
+                System.out.println("\"" + textPrint + "\" és enter");
             
             } else {
-                System.out.println("\"" + text + "\" no és enter");
+                System.out.println("\"" + textPrint + "\" no és enter");
             }
        }          
     }
