@@ -344,7 +344,7 @@ public class UtilString {
         if (Character.isWhitespace(text.charAt(0)) || 
             Character.isWhitespace(text.charAt(text.length()-1))) {
                 
-                text = treureEspaisInicialsFinals(text);
+                //text = treureEspaisInicialsFinals(text);
             }
            
         for (int i=0; i<text.length(); i++) {
