@@ -7,6 +7,7 @@
  
 public class UtilString {
     public static void main(String[] args) {
+
     
     }
      
@@ -503,6 +504,8 @@ public class UtilString {
     public static String junta(String[] cadenes, String separador, String darrerSeparador) {
     
     String resposta = "";
+    
+    if (cadenes.length < 2) return resposta+= cadenes[0];
     
     for (int i=0; i<cadenes.length; i++) {
         
