@@ -506,9 +506,9 @@ public class UtilString {
     
     for (int i=0; i<cadenes.length; i++) {
         
-        if (i==cadenes.length-1) {
+        if (i==cadenes.length-2) {
             
-            resposta += darrerSeparador + cadenes[i];
+            resposta += cadenes[i] + darrerSeparador + cadenes[i+1];
             return resposta;
         }
         
