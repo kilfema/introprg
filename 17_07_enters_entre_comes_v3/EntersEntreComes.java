@@ -8,8 +8,14 @@ public class EntersEntreComes {
     public static void main(String[] args) {
         
         System.out.println("Quants?");
+        int numElements = Integer.parseInt(Entrada.readLine());
         
-        int[] numeros = new int[Integer.parseInt(Entrada.readLine())];
+        if (numElements<0) {
+            System.out.println("Mínim 0");
+            return;
+        }
+        
+        int[] numeros = new int[numElements];
 
         for (int j = 0; j < numeros.length; j++) {
             System.out.println("Valor " + (j + 1) + "?");
