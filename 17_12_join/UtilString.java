@@ -508,11 +508,11 @@ public class UtilString {
         
         if (i==cadenes.length-1) {
             
-            resposta += darrerSeparador + " " + cadenes[i];
+            resposta += darrerSeparador + cadenes[i];
             return resposta;
         }
         
-        resposta += cadenes[i] + separador + " ";
+        resposta += cadenes[i] + separador;
     }
     
     return resposta;
