@@ -505,7 +505,9 @@ public class UtilString {
     
     String resposta = "";
     
-    if (cadenes.length < 2) return resposta+= cadenes[0];
+    if (cadenes.length == 0) return resposta;
+    
+    if (cadenes.length == 1) return resposta+= cadenes[0];
     
     for (int i=0; i<cadenes.length; i++) {
         
