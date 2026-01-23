@@ -11,7 +11,7 @@ public class EntersEntreComes {
         int numElements = Integer.parseInt(Entrada.readLine());
         
         if (numElements<0) {
-            System.out.println("Mínim 0");
+            System.out.println("Res a fer");
             return;
         }
         
