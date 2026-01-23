@@ -10,6 +10,11 @@ public class EntersEntreComes {
         System.out.println("Quants?");
         int numElements = UtilString.demanaEnterValid(Entrada.readLine());
         
+        if (numElements<1) {
+            System.out.println("Res a fer");
+            return;
+        }
+        
         System.out.println("Separador?");
         char separador = UtilString.separadorChar(Entrada.readLine());
         
