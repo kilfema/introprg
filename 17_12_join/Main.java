@@ -31,8 +31,8 @@
 
          } else {
 
-             System.out.println("Cap valor");
-
+            System.out.println("Cap valor");
+            return;
          }
 
          System.out.printf("junta(valors, \"%s\", \"%s\") -> \"%s\"%n",
