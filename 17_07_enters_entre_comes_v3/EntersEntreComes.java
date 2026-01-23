@@ -10,7 +10,7 @@ public class EntersEntreComes {
         System.out.println("Quants?");
         int numElements = Integer.parseInt(Entrada.readLine());
         
-        if (numElements<0) {
+        if (numElements<1) {
             System.out.println("Res a fer");
             return;
         }
