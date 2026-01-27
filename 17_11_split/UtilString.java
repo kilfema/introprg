@@ -551,7 +551,7 @@ public class UtilString {
                     }
                 }
             }            
-
+    System.out.println(resultat.length);
     return resultat;
     }
 } 
