@@ -445,12 +445,47 @@ public class UtilString {
     */
     
     public static String[] separa(String text, boolean inclouBlancs) {
-        
-        String[] resultat = new String [text.length()];
+
        
         boolean anteriorEsBlanc = false;
         int countElements= 0;
-        String paraula = "";
+        String paraula = "";        
+        
+            for (int i=0; i<text.length(); i++) {
+            
+                char caracter = text.charAt(i);
+                
+                if (Character.isWhitespace(caracter)) {
+                    
+                    if (!anteriorEsBlanc) { 
+                       
+                        if (!paraula.isEmpty()) {
+                           countElements++;
+                           paraula = "";
+                        }
+                        
+                        if (inclouBlancs) {
+                        
+                        anteriorEsBlanc = true;
+                        countElements++;
+                        }
+                    }
+                           
+                } else {
+                    
+                    anteriorEsBlanc = false;
+                    paraula += caracter;
+                    
+                    if (i == text.length() -1) {
+                        countElements++;
+                    }
+                }
+            }         
+        
+        String[] resultat = new String [countElements];
+        anteriorEsBlanc = false;
+        countElements= 0;
+        paraula = ""; 
         
             
             for (int i=0; i<text.length(); i++) {
@@ -521,7 +556,6 @@ public class UtilString {
                 }
             }      
  
-        System.out.println(countElements);
         String[] resultat = new String [countElements];
         anteriorEsBlanc = false;
         countElements= 0;
@@ -551,7 +585,7 @@ public class UtilString {
                     }
                 }
             }            
-    System.out.println(resultat.length);
+
     return resultat;
     }
 } 
