@@ -521,7 +521,7 @@ public class UtilString {
                 }
             }      
  
- 
+        System.out.println(countElements);
         String[] resultat = new String [countElements];
         anteriorEsBlanc = false;
         countElements= 0;
