@@ -6,7 +6,7 @@
 public class UtilString {
    public static boolean esVocal(char caracter) {
         
-        String vocals = "aàeèéiíïoóòuúü";
+        String vocals = "aàeèéiíïoóòuúüAÀEÈÉIÌÍÏOÒÓUÚÜ";
         
             for (int j = 0; j < vocals.length(); j++) {
                 if (caracter == vocals.charAt(j)) {
