@@ -492,13 +492,41 @@ public class UtilString {
     
     public static String[] separa(String text) {
         
-        String[] resultat = new String [text.length()];
-        
         boolean anteriorEsBlanc;
         int countElements= 0;
         String paraula = "";
-        
             
+            //BUCLE PARA CONTAR CANTIDAD DE PALABRAS E INDICAR POSTERIORMENTE LA DIMENSION DE ARRAY
+            for (int i=0; i<text.length(); i++) {
+            
+                char caracter = text.charAt(i);
+                
+                if (Character.isWhitespace(caracter)) {
+                       
+                        if (!paraula.isEmpty()) {
+                            countElements++;
+                            paraula = "";
+                            anteriorEsBlanc = true;
+                            continue;
+                        }
+                           
+                } else {
+                    
+                    anteriorEsBlanc = false;
+                    paraula += caracter;
+                    
+                    if (i == text.length() -1) {
+                        countElements++;
+                    }
+                }
+            }      
+ 
+ 
+        String[] resultat = new String [countElements];
+        anteriorEsBlanc = false;
+        countElements= 0;
+        paraula = "";
+                   
             for (int i=0; i<text.length(); i++) {
             
                 char caracter = text.charAt(i);
