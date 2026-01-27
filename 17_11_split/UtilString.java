@@ -490,6 +490,10 @@ public class UtilString {
 
     return resultat;
     }
+    
+    public static String[] separa(String) {
+            
+    }
 } 
 
 
