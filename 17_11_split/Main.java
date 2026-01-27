@@ -16,7 +16,14 @@ public class Main {
     System.out.println("Inclou espais?");
     boolean inclouBlancs = UtilitatsConfirmacio.respostaABoolean(Entrada.readLine());
     
-    String[] resultat = UtilString.separa(text, inclouBlancs);
+    String[] resultat;
+    
+    if (inclouBlancs) {
+        resultat = UtilString.separa(text, inclouBlancs);
+        
+    } else {
+        resultat = UtilString.separa(text);
+    }
     
     if (resultat.length == 0) {
     

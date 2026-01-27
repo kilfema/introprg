@@ -458,7 +458,6 @@ public class UtilString {
                 char caracter = text.charAt(i);
                 
                 if (Character.isWhitespace(caracter)) {
-                   // System.out.println("ejecuta ");
                     
                     if (!anteriorEsBlanc) { 
                        
@@ -491,8 +490,41 @@ public class UtilString {
     return resultat;
     }
     
-    public static String[] separa(String) {
+    public static String[] separa(String text) {
+        
+        String[] resultat = new String [text.length()];
+        
+        boolean anteriorEsBlanc;
+        int countElements= 0;
+        String paraula = "";
+        
             
+            for (int i=0; i<text.length(); i++) {
+            
+                char caracter = text.charAt(i);
+                
+                if (Character.isWhitespace(caracter)) {
+                       
+                        if (!paraula.isEmpty()) {
+                            resultat [countElements] = paraula;
+                            countElements++;
+                            paraula = "";
+                            anteriorEsBlanc = true;
+                            continue;
+                        }
+                           
+                } else {
+                    
+                    anteriorEsBlanc = false;
+                    paraula += caracter;
+                    
+                    if (i == text.length() -1) {
+                        resultat [countElements] = paraula;
+                    }
+                }
+            }            
+
+    return resultat;
     }
 } 
 
