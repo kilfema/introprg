@@ -33,7 +33,7 @@ public class Main {
     
     for (int i=0; i<resultat.length; i++) {
         
-        if (resultat[i] == null) continue;
+        if (resultat[i] == null) break;
         
         System.out.println("- \"" + resultat [i] + "\"");
     }
