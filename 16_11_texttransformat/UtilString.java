@@ -11,6 +11,8 @@ public class UtilString {
    
    */
     public static boolean esVocal(char caracter) {
+
+        caracter = Character.toLowerCase(caracter);
         
         String vocals = "aàeèéiíïoóòuúü";
         

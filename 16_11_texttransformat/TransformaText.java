@@ -33,6 +33,7 @@ public class TransformaText {
         
         //VOCALES
         if (UtilString.esVocal(caracter)) {
+            if (Character.isUpperCase(caracter)) caracter = Character.toLowerCase(caracter);
             resultat+= caracter;
             continue;
         }
@@ -40,6 +41,7 @@ public class TransformaText {
         
         //CONSONANTES
         if (UtilString.esConsonant(caracter)) {
+            if (Character.isLowerCase(caracter)) caracter = Character.toUpperCase(caracter);
             resultat += Character.toUpperCase(caracter);
             continue;
         }
