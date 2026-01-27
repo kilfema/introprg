@@ -8,13 +8,13 @@ public class Majusculitza {
         
     System.out.println("Text?");    
     System.out.println(
-                Majusculitza(
+                majusculitza(
                     Entrada.readLine().toLowerCase()
                 )
     );   
     }
     
-    public static String Majusculitza(String text) {
+    public static String majusculitza(String text) {
     
     String resultat = "";
     
