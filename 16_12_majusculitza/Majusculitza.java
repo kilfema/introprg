@@ -9,12 +9,14 @@ public class Majusculitza {
     System.out.println("Text?");    
     System.out.println(
                 majusculitza(
-                    Entrada.readLine().toLowerCase()
+                    Entrada.readLine()
                 )
     );   
     }
     
     public static String majusculitza(String text) {
+    
+    text = text.toLowerCase();
     
     String resultat = "";
     
