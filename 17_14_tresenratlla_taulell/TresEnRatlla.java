@@ -68,10 +68,14 @@ public class TresEnRatlla {
         if (fila<0 || fila>2 || columna<0 || columna>2) {
             System.out.println("Posició no vàlida");
             return;
-        } 
-
-        tauler[fila][columna] = 'X';
-
+        }
+        
+        if (!(tauler[fila][columna] == '·')) {
+            System.out.println("Posició ocupada");
+            
+        } else {
+            tauler[fila][columna] = 'X';
+        }
         
 
         // tornem a mostrar el tauler
