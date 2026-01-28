@@ -20,9 +20,9 @@ public class TresEnRatlla {
 
         tauler[0][0] = '·';
         
-        tauler[0][1] = '0';
+        tauler[0][1] = 'O';
         
-        tauler[0][2] = '0';
+        tauler[0][2] = 'O';
 
         // inicialització de la resta de files
 
