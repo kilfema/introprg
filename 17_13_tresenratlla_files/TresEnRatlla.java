@@ -33,7 +33,7 @@ public class TresEnRatlla {
 
         fila1[1] = 'X';
 
-        fila1[2] = '0';
+        fila1[2] = 'O';
         
 
         // inicialització de la fila 2
