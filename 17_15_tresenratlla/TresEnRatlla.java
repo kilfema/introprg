@@ -152,7 +152,9 @@ public class TresEnRatlla {
     }
     
     public static boolean coordenadaValida(String entrada) {
-    
+        
+        if (entrada.length()>2) return false;
+        
         String coord = "012";
         int count = 0;
         
