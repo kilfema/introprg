@@ -77,7 +77,7 @@ public class TresEnRatlla {
                                         
                 } else {
                 
-                    System.out.println("Coordenades incorrectes");
+                    System.out.println("Coordenades no vàlides");
                     continue;
                 }
                 
@@ -126,7 +126,7 @@ public class TresEnRatlla {
                                         
                 } else {
                 
-                    System.out.println("Coordenades incorrectes");
+                    System.out.println("Coordenades no vàlides");
                     continue;
                 }
                 
