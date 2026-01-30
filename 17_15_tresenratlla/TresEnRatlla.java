@@ -78,6 +78,7 @@ public class TresEnRatlla {
                 } else {
                 
                     System.out.println("Coordenades no vàlides");
+                    mostraTaulell(taulell);
                     continue;
                 }
                 
@@ -127,6 +128,7 @@ public class TresEnRatlla {
                 } else {
                 
                     System.out.println("Coordenades no vàlides");
+                    mostraTaulell(taulell);
                     continue;
                 }
                 
