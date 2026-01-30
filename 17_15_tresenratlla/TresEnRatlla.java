@@ -70,7 +70,7 @@ public class TresEnRatlla {
                         
                         if (jugadorGuanya(taulell, jugador)) {
                         
-                            System.out.println(jugador + " Guanya");
+                            System.out.println(jugador + " guanya");
                             return;
                         }                      
                     }
@@ -119,7 +119,7 @@ public class TresEnRatlla {
                         
                         if (jugadorGuanya(taulell, jugador)) {
                         
-                            System.out.println(jugador + " Guanya");
+                            System.out.println(jugador + " guanya");
                             return;
                         }                      
                     }
