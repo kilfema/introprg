@@ -54,7 +54,7 @@ public class TresEnRatlla {
                     
                     if (casellaOcupada(taulell, posLin, posCol)) {
                         
-                        System.out.println("Posició ocupada");
+                        System.out.println("Casella ocupada");
                         continue;
                         
                     } else if (hiHaEmpat(taulell)) {
@@ -102,7 +102,7 @@ public class TresEnRatlla {
                     
                     if (casellaOcupada(taulell, posLin, posCol)) {
                         
-                        System.out.println("Posició ocupada");
+                        System.out.println("Casella ocupada");
                         continue;
                         
                     } else if (hiHaEmpat(taulell)) {
