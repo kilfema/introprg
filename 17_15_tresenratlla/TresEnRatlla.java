@@ -28,9 +28,6 @@ public class TresEnRatlla {
         
         while (true) {
             
-            
-            mostraTaulell(taulell);
-            
             char jugador; 
             String entrada = "";
             int posLin = 0;
@@ -237,5 +234,3 @@ public class TresEnRatlla {
     return true;
     }
 }
-
-
