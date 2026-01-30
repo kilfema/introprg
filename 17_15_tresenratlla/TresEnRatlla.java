@@ -86,9 +86,9 @@ public class TresEnRatlla {
             
             while (true) { 
                 
-                jugador = 'Y';
-                //Torn de Y
-                System.out.println("Y?");
+                jugador = 'O';
+                //Torn de O
+                System.out.println("O?");
                 entrada = Entrada.readLine();
             
                 if (entrada.equalsIgnoreCase("a")) {
@@ -113,7 +113,7 @@ public class TresEnRatlla {
                             
                     } else {
                     
-                        taulell[posLin][posCol] = 'Y';
+                        taulell[posLin][posCol] = 'O';
                         mostraTaulell(taulell);
                         
                         if (jugadorGuanya(taulell, jugador)) {
