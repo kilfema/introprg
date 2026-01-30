@@ -26,6 +26,8 @@ public class TresEnRatlla {
         
         System.out.println("Comença el joc");     
         
+        mostraTaulell(taulell);
+        
         while (true) {
             
             char jugador; 
