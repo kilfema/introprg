@@ -44,7 +44,7 @@ public class TresEnRatlla {
                 entrada = Entrada.readLine();
             
                 if (entrada.equalsIgnoreCase("a")) {
-                    System.out.println("Cancel·lat");
+                    System.out.println(jugador + " abandona");
                     return;
                 }
                 
