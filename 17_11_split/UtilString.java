@@ -486,7 +486,6 @@ public class UtilString {
         anteriorEsBlanc = false;
         countElements= 0;
         paraula = ""; 
-        
             
             for (int i=0; i<text.length(); i++) {
             
@@ -498,20 +497,27 @@ public class UtilString {
                        
                         if (!paraula.isEmpty()) {
                             resultat [countElements] = paraula;
-                            //System.out.println("\"" + resultat[countElements] + "\"");
                             countElements++;
                             paraula = "";
                         }
                         
                         if (inclouBlancs) {
                         
-                        resultat [countElements] = " ";
-                        anteriorEsBlanc = true;
-                        countElements++;
+                            resultat [countElements] = " ";
+                            anteriorEsBlanc = true;
+                            countElements++;
                         }
+                        
+                    } else {
+                        
+                        resultat[countElements] += " ";
                     }
                            
                 } else {
+                    
+                    if (anteriorEsBlanc) {
+                    
+                    }
                     
                     anteriorEsBlanc = false;
                     paraula += caracter;
