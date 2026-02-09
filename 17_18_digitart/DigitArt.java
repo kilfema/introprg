@@ -163,12 +163,8 @@
             }
          }
          
-         if (count<1) {
-         
-            System.out.println("Com a mínim 1");
-            return;
-         }
-         
+         if (count<1) return;
+
          processaArgument(nums);
                            
      }
