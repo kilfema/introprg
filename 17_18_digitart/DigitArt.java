@@ -145,26 +145,25 @@
      public static void main(String[] args){
 
          if (args == null) return;
-         
-         
-         
+                 
          int count = 0;
          String nums = "";
          
          for (int i=0; i<args.length; i++) {
-            char caracter = args[i].charAt(i);
             
-            if (Character.isDigit(caracter) && (caracter == '1' || 
-                                                caracter == '2' || 
-                                                caracter == '3' )) {
+            for (int j=0; j<args[i].length(); j++) {
                 
-                                                count++;
-                                                nums += caracter;
+                char caracter = args[i].charAt(j);
+                
+                if (caracter == '1' || caracter == '2' || caracter == '3') {
+                        count++;
+                        nums += caracter;
+                }
             }
          }
          
          if (count<1) return;
-
+         
          processaArgument(nums);
                            
      }
