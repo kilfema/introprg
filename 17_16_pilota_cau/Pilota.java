@@ -80,8 +80,6 @@
          
          if (fila == 9) fila = 0;
          
-         System.out.println("fila: " + fila);
-         
          return fila;
      }
 
