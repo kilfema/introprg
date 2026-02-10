@@ -22,7 +22,7 @@ public class UtilTaula {
                  
                 if (taula[i][j] == primer) desti[i][j] = segon;
                 
-                else desti[i][j] = '·';
+                else desti[i][j] = primer;
             }
         }
         
