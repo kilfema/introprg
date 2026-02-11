@@ -72,6 +72,8 @@ public class TaulaEnterAString {
         
         String files = "";
         
+        int filesInt = 0;
+        
         for (int i=0; i<especificacio.length(); i++) {
             
             char caracter = especificacio.charAt(i);
@@ -90,7 +92,9 @@ public class TaulaEnterAString {
             
         }
         
-        if (!files.isEmpty()) return Integer.parseInt(files);
+        if (!files.isEmpty()) filesInt = Integer.parseInt(files);
+        
+        if (filesInt>= 1 && filesInt <= 99) return filesInt;
         
     return -1;
     }
