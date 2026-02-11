@@ -91,7 +91,6 @@ public class TaulaEnterAString {
             } else if (caracter == 'x' && (i==1 || i==2)) { 
                 
                 filesCorrectes = true;
-                continue;
             }
             
             if (filesCorrectes && !Character.isDigit(caracter)) return -1;
