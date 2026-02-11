@@ -18,8 +18,6 @@ public class TaulaEnterAString {
 
             int files = obteFiles(args[i]);
             
-            System.out.println(files);
-            
             int columnes = obteColumnes(args[i]);
 
             if (files < 1 || columnes < 1) {
