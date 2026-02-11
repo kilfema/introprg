@@ -78,6 +78,8 @@ public class TaulaEnterAString {
         
         int filesInt = 0;
         
+        boolean filesCorrectes = false;
+        
         for (int i=0; i<especificacio.length(); i++) {
             
             char caracter = especificacio.charAt(i);
@@ -86,9 +88,13 @@ public class TaulaEnterAString {
                 files += caracter;
                 continue;
                                            
-            } else if (caracter == 'x' && (i==1 || i==2)) continue;
+            } else if (caracter == 'x' && (i==1 || i==2)) { 
+                
+                filesCorrectes = true;
+                continue;
+            }
             
-            else if (!Character.isDigit(caracter)) return -1;
+            if (filesCorrectes && !Character.isDigit(caracter)) return -1;
             
         }
         
