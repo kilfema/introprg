@@ -18,7 +18,11 @@ public class TaulaEnterAString {
 
             int files = obteFiles(args[i]);
             
+            //System.out.println(files);
+            
             int columnes = obteColumnes(args[i]);
+            
+            //System.out.println(columnes);
             
             if (files < 1 || columnes < 1) {
 
@@ -108,7 +112,7 @@ public class TaulaEnterAString {
             
             if (!teX) {
                 
-                if (caracter == 'x') {
+                if (caracter == 'x' && i != 0) {
                     
                     teX=true;
                     continue;
