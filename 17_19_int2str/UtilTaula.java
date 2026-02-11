@@ -51,12 +51,7 @@ public class UtilTaula {
         for (int i=0; i<taula.length; i++) {
             
             for (int j=0; j<taula[0].length; j++) {
-                
-                if (j==0) {
-                    resultat += taula[i][j];
-                    continue;
-                }
-                
+                                
                 resultat += String.format("%8d", taula[i][j]);                               
             }
             resultat += "\n";
