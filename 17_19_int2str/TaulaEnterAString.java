@@ -20,8 +20,6 @@ public class TaulaEnterAString {
             
             int columnes = obteColumnes(args[i]);
             
-            System.out.println(columnes);
-            
             if (files < 1 || columnes < 1) {
 
                 System.out.println("Especificació no vàlida");
