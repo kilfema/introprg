@@ -19,7 +19,9 @@ public class TaulaEnterAString {
             int files = obteFiles(args[i]);
             
             int columnes = obteColumnes(args[i]);
-
+            
+            System.out.println(columnes);
+            
             if (files < 1 || columnes < 1) {
 
                 System.out.println("Especificació no vàlida");
@@ -114,10 +116,8 @@ public class TaulaEnterAString {
                     continue;
                     
                 } else if (!Character.isDigit(caracter)) return -1;
-            }
-            
-            
-            if (Character.isDigit(caracter)) col+= caracter;
+                
+            } else if (Character.isDigit(caracter)) col+= caracter;
        }
        
        if (col.isEmpty() || col.length() > 2) return -1;
