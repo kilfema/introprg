@@ -82,9 +82,9 @@ public class TaulaEnterAString {
                 files += caracter;
                 continue;
                                            
-            } else if (caracter == 'x' && (i==1 || i==2)) break;
+            } else if (caracter == 'x' && (i==1 || i==2)) continue;
             
-            else return -1;
+            else if (!Character.isDigit(caracter)) return -1;
             
         }
         
