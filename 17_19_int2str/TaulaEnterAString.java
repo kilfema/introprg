@@ -79,8 +79,8 @@ public class TaulaEnterAString {
             if (Character.isDigit(caracter) && i==0) {
                 files += caracter;
                 continue;
-            }
-            //} else break;
+                
+            } else if (!Character.isDigit(caracter) && i==0) break;
             
             if (Character.isDigit(caracter) && i==1) {
                 files += caracter;
