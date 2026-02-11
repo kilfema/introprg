@@ -106,9 +106,16 @@ public class TaulaEnterAString {
             
             char caracter = especificacio.charAt(i);
             
-            if (caracter == 'x') teX=true;
-                 
-            if (!teX) continue;
+            if (!teX) {
+                
+                if (caracter == 'x') {
+                    
+                    teX=true;
+                    continue;
+                    
+                } else if (!Character.isDigit(caracter)) return -1;
+            }
+            
             
             if (Character.isDigit(caracter)) col+= caracter;
        }
