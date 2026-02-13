@@ -89,7 +89,10 @@ public class TaulaEnterAString {
                 if (caracter == 'x') {
                     
                     teX = true;
-                    continue;
+                    
+                    if (i == especificacio.length() - 1) return -1;
+                    
+                    else continue;
                     
                 } else if (!Character.isDigit(caracter)) return -1;
                 
