@@ -118,6 +118,8 @@ public class TaulaEnterAString {
        
        String col = "";
        
+       String files = "";
+       
        for (int i=0; i<especificacio.length(); i++) {
             
             char caracter = especificacio.charAt(i);
@@ -131,10 +133,15 @@ public class TaulaEnterAString {
                     
                 } else if (!Character.isDigit(caracter)) return -1;
                 
+                 else files += caracter;
+                
             } else if (Character.isDigit(caracter)) col+= caracter;
        }
        
        if (col.isEmpty() || col.length() > 2) return -1;
+       
+        else if (files.isEmpty() || 
+            (Integer.parseInt(files) < 1 || Integer.parseInt(files) > 99)) return -1;
        
        return Integer.parseInt(col);
     }
