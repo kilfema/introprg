@@ -76,6 +76,8 @@ public class TaulaEnterAString {
         
         String files = "";
         
+        String col = "";
+        
         int filesInt = 0;
         
         boolean teX = false;
@@ -100,9 +102,13 @@ public class TaulaEnterAString {
 
             } else {
             
-                if (!Character.isDigit(caracter)) return -1;            
+                if (!Character.isDigit(caracter)) return -1;   
+                
+                else col += caracter;         
             }
         }
+        
+        if (col.isEmpty() || (Integer.parseInt(col) < 1 || Integer.parseInt(col) > 99)) return -1;
         
         if (!files.isEmpty()) filesInt = Integer.parseInt(files);
         
