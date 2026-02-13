@@ -24,9 +24,9 @@
 
     public static void mostraLletres(String text) {
 
-        if (text.length() < 1 {      // cas base
+        if (text.length() < 1) {      // cas base
 
-            text = "";
+            return;
 
         }
 
@@ -38,19 +38,20 @@
 
         char primer = text.charAt(0);
 
+        
         if (Character.isLetter(primer)) {
 
-            text = text.substring(1);
+            System.out.print(primer);
 
         }
 
 
         // considerem les lletres que conté la resta del text
 
-        String restaText = text;  // resta del text
+        String restaText = text.substring(1);  // resta del text
 
-        System.out.println(mostraLletres(restaText));      // crida recursiva
-
+        mostraLletres(restaText);      // crida recursiva
+       
     }
 
 }
