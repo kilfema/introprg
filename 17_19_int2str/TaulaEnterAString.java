@@ -18,7 +18,7 @@ public class TaulaEnterAString {
 
             int files = obteFiles(args[i]);
             
-            //System.out.println(files);
+            System.out.println(files);
             
             int columnes = obteColumnes(args[i]);
             
@@ -91,6 +91,7 @@ public class TaulaEnterAString {
             } else if (caracter == 'x' && (i==1 || i==2)) { 
                 
                 filesCorrectes = true;
+                continue;
             }
             
             if (filesCorrectes && !Character.isDigit(caracter)) return -1;
