@@ -32,7 +32,7 @@ public class TaulaEnterAString {
                          
                 int[][] taula  = new int[files][columnes];
 
-                UtilTaula.inicialitzaTaula(taula, valorInicial);
+                UtilTaula.inicialitzaSequencial(taula, valorInicial);
 
                 String resultat = UtilTaula.taulaToString(taula);
 

@@ -32,7 +32,7 @@ public class UtilTaula {
     /* Funció pura que composa un String a partir del contingut d'una taula d'enters. Els valors
     ** apareixeran separats amb un espai i representa els números com a mínim amb vuit posicions. 
     */
-    public static void inicialitzaTaula(int[][] taula, int valorInicial) {
+    public static void inicialitzaSequencial(int[][] taula, int valorInicial) {
         
         
         for (int i=0; i<taula.length; i++) {
