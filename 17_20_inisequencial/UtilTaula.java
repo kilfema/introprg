@@ -32,15 +32,12 @@ public class UtilTaula {
     /* Funció pura que composa un String a partir del contingut d'una taula d'enters. Els valors
     ** apareixeran separats amb un espai i representa els números com a mínim amb vuit posicions. 
     */
-    public static void inicialitzaSequencial(int[][] taula, int valorInicial) {
-        
+    public static void inicialitzaTaula(int[][] taula, int valor) {
         
         for (int i=0; i<taula.length; i++) {
             for (int j=0;j<taula[0].length; j++) {
                 
-                taula[i][j] = valorInicial;
-                
-                valorInicial++;
+                taula[i][j] = valor;
             }
         }
     }
@@ -61,4 +58,18 @@ public class UtilTaula {
         
         return resultat;  
     }
+    
+        public static void inicialitzaSequencial(int[][] taula, int valorInicial) {
+        
+        
+        for (int i=0; i<taula.length; i++) {
+            for (int j=0;j<taula[0].length; j++) {
+                
+                taula[i][j] = valorInicial;
+                
+                valorInicial++;
+            }
+        }
+    }
+    
 }
