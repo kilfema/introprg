@@ -7,7 +7,7 @@
  * solució recursiva sense iteradors.
  */
 
- public class Preordre {
+ public class Subcadenes {
     public static void main(String[] args) {
     
     System.out.println("Text?");
