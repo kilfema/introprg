@@ -11,16 +11,18 @@
     System.out.println("Text?");
     String text = Entrada.readLine();
     
-    System.out.println("Nombre?");
-    int nombre = Integer.parseInt(Entrada.readLine());
-    
     if (text.isEmpty() || UtilString.esTextVuit(text)) {
         System.out.println("error");
         return;
-    }
+    }  
+      
+    System.out.println("Nombre?");
+    String nombre = Entrada.readLine();
     
-    if (nombre<1) return;
     
-    System.out.println(UtilString.cadenaContinua(text, nombre));
+    if (nombre.length()>1 || !UtilString.esEnter(nombre)) return;
+    
+       
+    System.out.println(UtilString.cadenaContinua(text, Integer.parseInt(nombre)));
     }
   }
