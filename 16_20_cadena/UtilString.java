@@ -358,11 +358,12 @@ public class UtilString {
             }
         }    
         
-        if (validaLongitudEnter(text)) {
+        /*if (validaLongitudEnter(text)) {
                 
             return true;
         
-        } else return false;
+        } else return false;*/
+        return true;
     }   
     
 
