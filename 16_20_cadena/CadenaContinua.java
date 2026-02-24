@@ -20,7 +20,10 @@
     String nombre = Entrada.readLine();
     
     
-    if (nombre.length()<1 || !UtilString.esEnter(nombre)) return;
+    if (nombre.length()<1 || !UtilString.esEnter(nombre)) {
+        System.out.println("error");
+        return;
+    }  
        
     System.out.println(UtilString.cadenaContinua(text, Integer.parseInt(nombre)));
     }
