@@ -14,37 +14,13 @@
     System.out.println("Nombre?");
     int nombre = Integer.parseInt(Entrada.readLine());
     
-    if (text.isEmpty() || esTextVuit(text)) {
+    if (text.isEmpty() || UtilString.esTextVuit(text)) {
         System.out.println("error");
         return;
     }
     
     if (nombre<1) return;
     
-    cadenaContinua(text, nombre);
-    }
-    
-    public static boolean esTextVuit(String text) {
-        
-        for (int i=0; i<text.length(); i++) {
-            
-            if (!Character.isWhitespace(text.charAt(i))) return false;          
-        }
-    return true;
-    }
-    
-    public static void cadenaContinua(String text, int nombre) {
-    
-    int pos = 0;
-    
-    for (int i=1; i<=nombre; i++) {
-        
-        System.out.print(text.charAt(pos));
-        
-        pos++;
-        
-        if (pos == text.length()) pos=0;
-    }
-    
+    UtilString.cadenaContinua(text, nombre);
     }
   }
