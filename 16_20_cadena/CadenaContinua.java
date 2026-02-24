@@ -21,6 +21,6 @@
     
     if (nombre<1) return;
     
-    UtilString.cadenaContinua(text, nombre);
+    System.out.println(UtilString.cadenaContinua(text, nombre));
     }
   }

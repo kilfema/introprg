@@ -418,19 +418,20 @@ public class UtilString {
     return true;
     }
     
-    public static void cadenaContinua(String text, int nombre) {
+    public static String cadenaContinua(String text, int nombre) {
     
     int pos = 0;
+    String resultat = "";
     
     for (int i=1; i<=nombre; i++) {
         
-        System.out.print(text.charAt(pos));
+        resultat+= text.charAt(pos);
         
         pos++;
         
         if (pos == text.length()) pos=0;
     }
-    
+    return resultat;
     }
 }
 
